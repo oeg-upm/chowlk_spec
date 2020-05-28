@@ -1,6 +1,6 @@
 # chowlk_spec
 Repository for the chowlk project which aggregates the converter and the specification
 
-Library for diagrams.net (a.k.a draw.io) 
+Library for diagrams.net (a.k.a draw.io) https://github.com/oeg-upm/chowlk_spec/fair_spec.xml
 
-Example of use: 
+Examples of use:  https://github.com/oeg-upm/chowlk_spec/examples
