@@ -3,4 +3,4 @@ Repository for the chowlk project which aggregates the converter and the specifi
 
 Library for diagrams.net (a.k.a draw.io) https://github.com/oeg-upm/chowlk_spec/blob/master/fair_spec.xml
 
-Examples of use:  https://github.com/oeg-upm/chowlk_spec/examples
+Examples of use:  https://github.com/oeg-upm/chowlk_spec/tree/master/examples
