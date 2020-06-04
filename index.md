@@ -18,7 +18,17 @@ This document describes the CHOWLK specification, a set of recomendations to dev
 
 ### 2.1 Basic Blocks
 
+| Block | OWL Element | Description
+| ------------- | ------------- | ---------- |
+| Content  | Content  | Content
+| Content  | Content  | Content
+
 ### 2.2 Ontology Constructs
+
+| Diagram | OWL Code | Description
+| ------------- | ------------- | ---------- |
+| Content  | Content  | Content
+| Content  | Content  | Content
 
 ## 3. Recomendations
 
