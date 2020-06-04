@@ -1,10 +1,10 @@
 # CHOWLK Specification
 
-**Authors:**\
-[María Poveda-Villalón](http://w3id.org/people/mpoveda) ([Universidad Politécnica de Madrid](https://www.upm.es/))\
+**Authors:**<br>
+[María Poveda-Villalón](http://w3id.org/people/mpoveda) ([Universidad Politécnica de Madrid](https://www.upm.es/))<br>
 Serge Chávez-Feria ([Universidad Politécnica de Madrid](https://www.upm.es/))
 
-**License:**\
+**License:**<br>
 Apache 2.0 License
 
 ## Abstract
