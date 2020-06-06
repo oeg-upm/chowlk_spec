@@ -11,28 +11,14 @@ Apache 2.0 License
 
 ## Table of Content
 
-## 1. Introduction
+{% include introduction.md %}
 
-## 2. Specification
+{% include specification.md %}
 
-### 2.1 Basic Blocks
+{% include recomendations.md %}
 
-| Block | OWL Element | Description
-| ------------- | ------------- | ---------- |
-| Content  | Content  | Content
-| Content  | Content  | Content
+{% include service.md %}
 
-### 2.2 Ontology Constructs
+{% include references.md %}
 
-| Diagram | OWL Code | Description
-| ------------- | ------------- | ---------- |
-| Content  | Content  | Content
-| Content  | Content  | Content
-
-## 3. Recomendations
-
-## 4. CHOWLK Ontology Generation Service
-
-## 5. References
-
-## 6. Acknowledgment
+{% include acknowledgment.md %}
