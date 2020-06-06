@@ -4,7 +4,7 @@
 
 | Block | OWL Element | Description
 | ------------- | ------------- | ---------- |
-| <img src="../images/class.jpg" alt="Class block">  | Content  | Content
+| <img src="https://github.com/oeg-upm/chowlk_spec/blob/gh-pages/images/class.jpg" alt="Class block">  | Content  | Content
 | Content  | Content  | Content
 
 ### 2.2 Ontology Constructs
