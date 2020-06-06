@@ -7,8 +7,7 @@ Serge Chávez-Feria ([Universidad Politécnica de Madrid](https://www.upm.es/))
 **License:**<br>
 Apache 2.0 License
 
-## Abstract
-This document describes the CHOWLK specification, a set of recomendations to develop ontological diagrams.
+{% include abstract.md %}
 
 ## Table of Content
 
