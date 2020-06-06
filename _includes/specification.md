@@ -4,7 +4,7 @@
 
 | Block | OWL Element | Description
 | ------------- | ------------- | ---------- |
-| <img src="_includes/images/class.jpg" alt="Class block">  | Content  | Content
+| <img src="./_includes/images/class.jpg" alt="Class block">  | Content  | Content
 | Content  | Content  | Content
 
 ### 2.2 Ontology Constructs
