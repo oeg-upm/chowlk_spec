@@ -13,6 +13,7 @@ Apache 2.0 License
 
 1. [Introduction](#introduction)
 2. [Specification](#specification)
+    2.1. [Basic Elements](#2.1-basic-elements)
 3. [Example](#example)
 4. [CHOWLK Code Generation Service](#service)
 5. [References](#references)
