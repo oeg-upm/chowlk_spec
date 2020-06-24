@@ -17,6 +17,7 @@ Apache 2.0 License
     2. [Universal Restrictions for Object Properties](#universal-restrictions-for-object-properties)
     3. [Existential Restrictions for Object Properties](#existential-restrictions-for-object-properties)
     4. [Cardinality Restrictions for Object Properties](#cardinality-restrictions-for-object-properties)
+    5. [Other Characteristics of Object Properties](#other-characteristics-of-object-properties)
 3. [Example](#example)
 4. [CHOWLK Code Generation Service](#service)
 5. [References](#references)

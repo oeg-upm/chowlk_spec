@@ -2,6 +2,8 @@
 
 This sections gives detailed information about the drawio blocks used to represent the OWL ontological elements normally used in the construction of an ontology. The specification is structured around the three main elements in an ontology: <code>owl:Class</code>, <code>owl:ObjectProperty</code> and <code>owl:DatatypeProperty</code>. Each table in the sub-sections contains not only the diagram block but also the equivalent owl code, and a description.
 
+<a name="basic-elements"></a>
+
 ### 2.1 Basic Elements
 
 <table style="width:100%">
@@ -86,6 +88,8 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 </table>
 
+<a name="universal-restrictions-for-object-properties"></a>
+
 ### 2.2 Universal Restrictions for Object Properties
 
 <table style="width:100%">
@@ -123,6 +127,7 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 </table>
 
+<a name="existential-restrictions-for-object-properties"></a>
 
 ### 2.3 Existential Restrictions for Object Properties
 
@@ -161,6 +166,7 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 </table>
 
+<a name="cardinality-restrictions-for-object-properties"></a>
 
 ### 2.4 Cardinality Restrictions for Object Properties
 
@@ -188,6 +194,7 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
   </table>
 
+<a name="other-characteristics-of-object-properties"></a>
 
 ### 2.5 Other Characteristics of Object Properties
 
