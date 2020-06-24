@@ -1,6 +1,16 @@
-# chowlk_spec
-Repository for the chowlk project which aggregates the converter and the specification
+# Chowlk Specification
 
+<b>Authors:</b>
+María Poveda-Villalón
+Serge Chávez-Feria
+
+Repository for the Chowlk project, which provides an specification to create Ontology diagrams in <a href="https://www.draw.io/">drawio</a>, and a service to generate the OWL code automatically from the diagram.
+
+<b>Specifcation:</b>
+https://oeg-upm.github.io/chowlk_spec/
+
+<b>Drawio Library with the specification blocks:</b>
 Library for diagrams.net (a.k.a draw.io) https://github.com/oeg-upm/chowlk_spec/blob/master/chowlk-drawio-library.xml
 
+<b>Example of how to use the specification:</b>
 Examples of use:  https://github.com/oeg-upm/chowlk_spec/tree/master/examples
