@@ -1,4 +1,4 @@
-# CHOWLK Specification
+# Chowlk Specification
 
 <b>Authors:</b><br>
 María Poveda-Villalón<br>
