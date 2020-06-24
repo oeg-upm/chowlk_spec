@@ -271,6 +271,7 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
   </table>
 
+<a name="universal-restrictions-for-datatype-properties"></a>
 
 ### 2.6 Universal Restrictions for Datatype Properties
 
@@ -300,6 +301,7 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 </table>
 
+<a name="existential-restrictions-for-datatype-properties"></a>
 
 ### 2.7 Existential Restrictions for Datatype Properties
 
@@ -329,6 +331,7 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 </table>
 
+<a name="cardinality-restrictions-for-datatype-properties"></a>
 
 ### 2.8 Cardinality Restrictions for Datatype Properties
 
@@ -354,6 +357,7 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
   </table>
 
+<a name="other-characteristics-of-datatype-properties"></a>
 
 ### 2.9 Other Characteristics of Datatype Properties
 
@@ -382,6 +386,7 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 </table>
 
+<a name="domain-and-range-for-object-properties"></a>
 
 ### 2.10 Domain and Range for Object Properties
 
@@ -437,6 +442,7 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
   </table>
 
+<a name="domain-and-range-for-datatype-properties"></a>
 
 ### 2.11 Domain and Range for Datatype Properties
 
@@ -477,6 +483,7 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 </table>
 
+<a name="intersection-and-union-of-concepts"></a>
 
 ### 2.12 Intersection and Union of Concepts
 
@@ -513,6 +520,7 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 </table>
 
+<a name="equivalence-and-disjointness-of-concepts"></a>
 
 ### 2.13 Equivalence and Disjointness of Concepts
 
@@ -549,6 +557,7 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 </table>
 
+<a name="relations-between-properties"></a>
 
 ### 2.14 Relations between Properties
 
@@ -594,6 +603,7 @@ The following section applies to both type of properties: <code>owl:ObjectProper
   </tr>
 </table>
 
+<a name="constructs-for-indiviuals-and-rdf-data"></a>
 
 ### 2.15 Constructs for Indiviuals and RDF data
 
