@@ -88,9 +88,13 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 </table>
 
+<a name="object-properties"></a>
+
+### 2.1 Object Properties
+
 <a name="universal-restrictions-for-object-properties"></a>
 
-### 2.2 Universal Restrictions for Object Properties
+### 2.1.1 Universal Restrictions
 
 <table style="width:100%">
   <tr>
@@ -129,7 +133,7 @@ This sections gives detailed information about the drawio blocks used to represe
 
 <a name="existential-restrictions-for-object-properties"></a>
 
-### 2.3 Existential Restrictions for Object Properties
+### 2.1.2 Existential Restrictions
 
 <table style="width:100%">
   <tr>
@@ -168,7 +172,7 @@ This sections gives detailed information about the drawio blocks used to represe
 
 <a name="cardinality-restrictions-for-object-properties"></a>
 
-### 2.4 Cardinality Restrictions for Object Properties
+### 2.1.3 Cardinality Restrictions
 
 <table style="width:100%">
   <tr>
@@ -196,7 +200,7 @@ This sections gives detailed information about the drawio blocks used to represe
 
 <a name="other-characteristics-of-object-properties"></a>
 
-### 2.5 Other Characteristics of Object Properties
+### 2.1.4 Other Characteristics
 
 <table style="width:100%">
   <tr>
@@ -271,124 +275,10 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
   </table>
 
-<a name="universal-restrictions-for-datatype-properties"></a>
-
-### 2.6 Universal Restrictions for Datatype Properties
-
-<table style="width:100%">
-  <tr>
-    <th style="width:25%">Diagram BLOCK</th>
-    <th style="width:45%">OWL Element</th>
-    <th style="width:30%">Description</th>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/universal_restriction_dp_1.jpg" alt="Universal restriction block" height="50%"></td>
-    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
-				&emsp;&emsp;<code>owl:allValuesFrom datatype ] .</code>
-    </td>
-    <td>Form 1 of an universal restriction between a concept and a datatype. <code>Class1</code> is subclass of an anonymus concept which has a datatype property <code>datatypeProperty1</code>, and all the values must be of type <code>datatype</code>.</td>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/universal_restriction_dp_2.jpg" alt="Universal restriction block" height="50%"></td>
-    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
-				&emsp;&emsp;<code>owl:allValuesFrom datatype ] .</code>
-    </td>
-    <td>Form 2 of an universal restriction between a concept and a datatype.</td>
-  </tr>
-</table>
-
-<a name="existential-restrictions-for-datatype-properties"></a>
-
-### 2.7 Existential Restrictions for Datatype Properties
-
-<table style="width:100%">
-  <tr>
-    <th style="width:25%">Diagram BLOCK</th>
-    <th style="width:45%">OWL Element</th>
-    <th style="width:30%">Description</th>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/existential_restriction_dp_1.jpg" alt="Existential restriction block" height="50%"></td>
-    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
-				&emsp;&emsp;<code>owl:someValuesFrom datatype ] .</code>
-    </td>
-    <td>Form 1 of an existential restriction between a concept and a datatype. <code>Class1</code> is subclass of an anonymus concept which has a datatype property <code>datatypeProperty1</code>, and some values must be of type <code>datatype</code>.</td>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/existential_restriction_dp_2.jpg" alt="Existential restriction block" height="50%"></td>
-    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
-				&emsp;&emsp;<code>owl:someValuesFrom datatype ] .</code>
-    </td>
-    <td>Form 2 of an existential restriction between a concept and a datatype.</td>
-  </tr>
-</table>
-
-<a name="cardinality-restrictions-for-datatype-properties"></a>
-
-### 2.8 Cardinality Restrictions for Datatype Properties
-
-<table style="width:100%">
-  <tr>
-    <th style="width:25%">Diagram BLOCK</th>
-    <th style="width:45%">OWL Element</th>
-    <th style="width:30%">Description</th>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/cardinality_restriction_dp.jpg" alt="Cardinality restriction block" height="50%"></td>
-    <td>
-      <code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
-				&emsp;&emsp;<code>owl:minCardinality "N1"^^xsd:nonNegativeInteger ] ,<br></code>
-        &emsp;&emsp;<code>[ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
-				&emsp;&emsp;<code>owl:maxCardinality "N2"^^xsd:nonNegativeInteger ] .</code><br>
-    </td>
-    <td>Cardinality restriction of a concept on a datatype property. <code>Class1</code> is subclass of an anonymus concept which has an datatype property <code>datatypeProperty1</code>, and shall have at least N1 and at most N2 values. If the N2 element is equal to the letter N, it means <code>owl:maxCardinality</code> does not exist.</td>
-  </tr>
-  </table>
-
-<a name="other-characteristics-of-datatype-properties"></a>
-
-### 2.9 Other Characteristics of Datatype Properties
-
-<table style="width:100%">
-  <tr>
-    <th style="width:25%">Diagram BLOCK</th>
-    <th style="width:45%">OWL Element</th>
-    <th style="width:30%">Description</th>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/functional_dp_1.jpg" alt="Functional DP block" height="50%"></td>
-    <td>
-      <code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ,<br></code>
-        &emsp;&emsp;<code>owl:FunctionalProperty .</code>
-    </td>
-    <td>Form 1 of a functional property.</td>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/functional_dp_2.jpg" alt="Functional DP block" height="50%"></td>
-    <td>
-      <code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ,<br></code>
-        &emsp;&emsp;<code>owl:FunctionalProperty .</code>
-    </td>
-    <td>Form 2 of a functional property.</td>
-  </tr>
-</table>
 
 <a name="domain-and-range-for-object-properties"></a>
 
-### 2.10 Domain and Range for Object Properties
+### 2.1.4 Domain and Range
 
 <table style="width:100%">
 
@@ -442,9 +332,130 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
   </table>
 
+
+<a name="datatype-properties"></a>
+
+### 2.2 Datatype Properties
+
+<a name="universal-restrictions-for-datatype-properties"></a>
+
+### 2.2.1 Universal Restrictions
+
+<table style="width:100%">
+  <tr>
+    <th style="width:25%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:30%">Description</th>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/universal_restriction_dp_1.jpg" alt="Universal restriction block" height="50%"></td>
+    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;<code>owl:allValuesFrom datatype ] .</code>
+    </td>
+    <td>Form 1 of an universal restriction between a concept and a datatype. <code>Class1</code> is subclass of an anonymus concept which has a datatype property <code>datatypeProperty1</code>, and all the values must be of type <code>datatype</code>.</td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/universal_restriction_dp_2.jpg" alt="Universal restriction block" height="50%"></td>
+    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;<code>owl:allValuesFrom datatype ] .</code>
+    </td>
+    <td>Form 2 of an universal restriction between a concept and a datatype.</td>
+  </tr>
+</table>
+
+<a name="existential-restrictions-for-datatype-properties"></a>
+
+### 2.2.2 Existential Restrictions
+
+<table style="width:100%">
+  <tr>
+    <th style="width:25%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:30%">Description</th>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/existential_restriction_dp_1.jpg" alt="Existential restriction block" height="50%"></td>
+    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;<code>owl:someValuesFrom datatype ] .</code>
+    </td>
+    <td>Form 1 of an existential restriction between a concept and a datatype. <code>Class1</code> is subclass of an anonymus concept which has a datatype property <code>datatypeProperty1</code>, and some values must be of type <code>datatype</code>.</td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/existential_restriction_dp_2.jpg" alt="Existential restriction block" height="50%"></td>
+    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;<code>owl:someValuesFrom datatype ] .</code>
+    </td>
+    <td>Form 2 of an existential restriction between a concept and a datatype.</td>
+  </tr>
+</table>
+
+<a name="cardinality-restrictions-for-datatype-properties"></a>
+
+### 2.2.3 Cardinality Restrictions
+
+<table style="width:100%">
+  <tr>
+    <th style="width:25%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:30%">Description</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/cardinality_restriction_dp.jpg" alt="Cardinality restriction block" height="50%"></td>
+    <td>
+      <code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;<code>owl:minCardinality "N1"^^xsd:nonNegativeInteger ] ,<br></code>
+        &emsp;&emsp;<code>[ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;<code>owl:maxCardinality "N2"^^xsd:nonNegativeInteger ] .</code><br>
+    </td>
+    <td>Cardinality restriction of a concept on a datatype property. <code>Class1</code> is subclass of an anonymus concept which has an datatype property <code>datatypeProperty1</code>, and shall have at least N1 and at most N2 values. If the N2 element is equal to the letter N, it means <code>owl:maxCardinality</code> does not exist.</td>
+  </tr>
+  </table>
+
+<a name="other-characteristics-of-datatype-properties"></a>
+
+### 2.2.4 Other Characteristics
+
+<table style="width:100%">
+  <tr>
+    <th style="width:25%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:30%">Description</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/functional_dp_1.jpg" alt="Functional DP block" height="50%"></td>
+    <td>
+      <code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ,<br></code>
+        &emsp;&emsp;<code>owl:FunctionalProperty .</code>
+    </td>
+    <td>Form 1 of a functional property.</td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/functional_dp_2.jpg" alt="Functional DP block" height="50%"></td>
+    <td>
+      <code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ,<br></code>
+        &emsp;&emsp;<code>owl:FunctionalProperty .</code>
+    </td>
+    <td>Form 2 of a functional property.</td>
+  </tr>
+</table>
+
+
 <a name="domain-and-range-for-datatype-properties"></a>
 
-### 2.11 Domain and Range for Datatype Properties
+### 2.2.5 Domain and Range
 
 <table style="width:100%">
 
@@ -485,7 +496,7 @@ This sections gives detailed information about the drawio blocks used to represe
 
 <a name="intersection-and-union-of-concepts"></a>
 
-### 2.12 Intersection and Union of Concepts
+### 2.3 Intersection and Union of Concepts
 
 <table style="width:100%">
 
@@ -522,7 +533,7 @@ This sections gives detailed information about the drawio blocks used to represe
 
 <a name="equivalence-and-disjointness-of-concepts"></a>
 
-### 2.13 Equivalence and Disjointness of Concepts
+### 2.4 Equivalence and Disjointness of Concepts
 
 <table style="width:100%">
 
@@ -559,7 +570,7 @@ This sections gives detailed information about the drawio blocks used to represe
 
 <a name="relations-between-properties"></a>
 
-### 2.14 Relations between Properties
+### 2.5 Relations between Properties
 
 The following section applies to both type of properties: <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>. For demonstration purposes we will only use object properties in the examples. It is also indicated if the OWL construct applies to object properties, datatype properties, or both.
 <table style="width:100%">
@@ -605,7 +616,7 @@ The following section applies to both type of properties: <code>owl:ObjectProper
 
 <a name="constructs-for-indiviuals-and-rdf-data"></a>
 
-### 2.15 Constructs for Indiviuals and RDF data
+### 2.6 Constructs for Indiviuals and RDF data
 
 <table style="width:100%">
   <tr>
