@@ -22,8 +22,12 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
-      <img src="resources/logo.svg" class="project-name" width="50%"/>
+    <header role="banner">
+      <div id="logo-header" class="logo">
+      <img src="resources/logo.svg" width="50%"/>
+      </div>
+
+      <div class="page-header">
       <h1 class="project-name">Visual Ontology Specification</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
@@ -33,6 +37,7 @@
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
+      </div>
     </header>
 
     <main id="content" class="main-content" role="main">

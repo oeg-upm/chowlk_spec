@@ -95,13 +95,13 @@ This sections gives detailed information about the drawio blocks used to represe
   
   <tr>
     <td class="first-column"><img src="images/subclass_1.svg" alt="Subclass"></td>
-    <td rowspan="2"><code>ns:Class1 owl:subClassOf ns:Class2</code></td>
-    <td>Option 1 to express that <code>ns:Class1</code> is sub-class of <code>ns:Class2</code>.</td>
+    <td rowspan="2"><code>ns:Class2 owl:subClassOf ns:Class1</code></td>
+    <td>Option 1 to express that <code>ns:Class2</code> is sub-class of <code>ns:Class1</code>.</td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/subclass_2.svg" alt="Subclass"></td>
-    <td>Option 2 to express that <code>ns:Class1</code> is sub-class of <code>ns:Class2</code>.</td>
+    <td>Option 2 to express that <code>ns:Class2</code> is sub-class of <code>ns:Class1</code>.</td>
   </tr>
 </table>
 

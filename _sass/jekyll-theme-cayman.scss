@@ -105,6 +105,12 @@ a {
   }
 }
 
+.logo {
+  text-align: center;
+  background-color: $header-bg-color-logo;
+  width: 100%;
+}
+
 .page-header {
   color: $header-heading-color;
   text-align: center;

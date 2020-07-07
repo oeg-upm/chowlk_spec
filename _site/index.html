@@ -22,19 +22,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=7b29aaaeb42c8ba10ff79d09ccda04050b29e818">
+    <link rel="stylesheet" href="/assets/css/style.css?v=77885cd87d18bc31c01f8f1c71993d0003211c5b">
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
-      <img src="resources/logo.svg" class="project-name" width="50%"/>
+    <header role="banner">
+      <div id="logo-header" class="logo">
+      <img src="resources/logo.svg" width="50%"/>
+      </div>
+
+      <div class="page-header">
       <h1 class="project-name">Visual Ontology Specification</h1>
       <h2 class="project-tagline">First Draft 04/06/2020</h2>
       
         <a href="https://github.com/oeg-upm/chowlk_spec" class="btn">View on GitHub</a>
       
       
+      </div>
     </header>
 
     <main id="content" class="main-content" role="main">
@@ -42,7 +47,7 @@
 
 <p><strong>Authors:</strong><br />
 <a href="http://w3id.org/people/mpoveda">María Poveda-Villalón</a> (<a href="https://www.upm.es/">Universidad Politécnica de Madrid</a>)<br />
-Serge Chávez-Feria (<a href="https://www.upm.es/">Universidad Politécnica de Madrid</a>)</p>
+<a href="http://w3id.org/people/serge">Serge Chávez-Feria</a> (<a href="https://www.upm.es/">Universidad Politécnica de Madrid</a>)</p>
 
 <p><strong>License:</strong><br />
 Apache 2.0 License</p>
@@ -193,13 +198,13 @@ Apache 2.0 License</p>
   
   <tr>
     <td class="first-column"><img src="images/subclass_1.svg" alt="Subclass" /></td>
-    <td rowspan="2"><code>ns:Class1 owl:subClassOf ns:Class2</code></td>
-    <td>Option 1 to express that <code>ns:Class1</code> is sub-class of <code>ns:Class2</code>.</td>
+    <td rowspan="2"><code>ns:Class2 owl:subClassOf ns:Class1</code></td>
+    <td>Option 1 to express that <code>ns:Class2</code> is sub-class of <code>ns:Class1</code>.</td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/subclass_2.svg" alt="Subclass" /></td>
-    <td>Option 2 to express that <code>ns:Class1</code> is sub-class of <code>ns:Class2</code>.</td>
+    <td>Option 2 to express that <code>ns:Class2</code> is sub-class of <code>ns:Class1</code>.</td>
   </tr>
 </table>
 

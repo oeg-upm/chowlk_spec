@@ -2,7 +2,7 @@
 
 **Authors:**<br>
 [María Poveda-Villalón](http://w3id.org/people/mpoveda) ([Universidad Politécnica de Madrid](https://www.upm.es/))<br>
-Serge Chávez-Feria ([Universidad Politécnica de Madrid](https://www.upm.es/))
+[Serge Chávez-Feria](http://w3id.org/people/serge) ([Universidad Politécnica de Madrid](https://www.upm.es/))
 
 **License:**<br>
 Apache 2.0 License
