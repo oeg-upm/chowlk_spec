@@ -276,9 +276,9 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
   </table>
 
-<a name="other-characteristics-of-object-properties"></a>
+<a name="functional-object-properties"></a>
 
-### 2.3.4 Other Characteristics
+### 2.3.4 Functional Properties
 
 <table style="width:100%">
   <tr>
@@ -299,6 +299,19 @@ This sections gives detailed information about the drawio blocks used to represe
     <td class="first-column"><img src="images/functional_op_2.svg" alt="Functional OP block"></td>
     <td>Option 2 for a functional property.</td>
   </tr>
+</table>
+
+<a name="inverse-functional-object-properties"></a>
+
+### 2.3.5 Inverse Functional Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:25%">Description</th>
+  </tr>
+
   <tr>
     <td class="first-column"><img src="images/inverse_functional_op_1.svg" alt="Inverse Functional OP block"></td>
     <td rowspan="2">
@@ -311,6 +324,19 @@ This sections gives detailed information about the drawio blocks used to represe
     <td class="first-column"><img src="images/inverse_functional_op_2.svg" alt="Inverse Functional OP block"></td>
     <td>Option 2 for an inverse functional property.</td>
   </tr>
+</table>
+
+<a name="symmetric-object-properties"></a>
+
+### 2.3.6 Symmetric Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:25%">Description</th>
+  </tr>
+
   <tr>
     <td class="first-column"><img src="images/symmetric_op_1.svg" alt="Symmetric OP block"></td>
     <td rowspan="2">
@@ -323,6 +349,19 @@ This sections gives detailed information about the drawio blocks used to represe
     <td class="first-column"><img src="images/symmetric_op_2.svg" alt="Symmetric OP block"></td>
     <td>Option 2 for a symmetric property.</td>
   </tr>
+</table>
+
+<a name="transitive-object-properties"></a>
+
+### 2.3.7 Transitive Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:25%">Description</th>
+  </tr>
+
   <tr>
     <td class="first-column"><img src="images/transitive_op_1.svg" alt="Transitive OP block"></td>
     <td rowspan="2">
@@ -335,12 +374,12 @@ This sections gives detailed information about the drawio blocks used to represe
     <td class="first-column"><img src="images/transitive_op_2.svg" alt="Transitive OP block"></td>
     <td>Option 2 for a transitive property.</td>
   </tr>
-  </table>
+</table>
 
 
 <a name="domain-and-range-for-object-properties"></a>
 
-### 2.3.5 Domain and Range
+### 2.3.8 Domain and Range
 
 <table style="width:100%">
 
@@ -471,9 +510,9 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
   </table>
 
-<a name="other-characteristics-of-datatype-properties"></a>
+<a name="functional-datatype-properties"></a>
 
-### 2.4.4 Other Characteristics
+### 2.4.4 Functional Properties
 
 <table style="width:100%">
   <tr>
@@ -544,6 +583,11 @@ This sections gives detailed information about the drawio blocks used to represe
 ### 2.5 Relations between Properties
 
 The following section applies to both type of properties: <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>. For demonstration purposes we will only use object properties in the examples. It is also indicated if the OWL construct applies to object properties, datatype properties, or both.
+
+<a name="sub-property"></a>
+
+### 2.5.1 Sub-Property
+
 <table style="width:100%">
   <tr>
     <th style="width:35%">Diagram BLOCK</th>
@@ -560,6 +604,19 @@ The following section applies to both type of properties: <code>owl:ObjectProper
     <td class="first-column"><img src="images/subproperty_2.svg" alt="Subproperty"></td>
     <td>Option 2 for a sub-property relationship between two object properties. This construct applies to <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>.</td>
   </tr>
+</table>
+
+<a name="equivalent-property"></a>
+
+### 2.5.2 Equivalent Property
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:25%">Description</th>
+  </tr>
+
   <tr>
     <td class="first-column"><img src="images/equivalent_property_1.svg" alt="Equivalent Property"></td>
     <td rowspan="2"><code>ns:objectProperty1 owl:equivalentProperty ns:objectProperty2</code></td>
@@ -569,6 +626,19 @@ The following section applies to both type of properties: <code>owl:ObjectProper
     <td class="first-column"><img src="images/equivalent_property_2.svg" alt="Equivalent Property"></td>
     <td>Option 2 for an equivalence relationship between two object properties. This construct applies to <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>.</td>
   </tr>
+</table>
+
+<a name="inverse-property"></a>
+
+### 2.5.3 Inverse Property
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:25%">Description</th>
+  </tr>
+
   <tr>
     <td class="first-column"><img src="images/inverse_property_1.svg" alt="Inverse"></td>
     <td rowspan="2"><code>ns:objectProperty1 owl:inverseOf ns:objectProperty2</code></td>
@@ -580,9 +650,13 @@ The following section applies to both type of properties: <code>owl:ObjectProper
   </tr>
 </table>
 
-<a name="constructs-for-indiviuals-and-rdf-data"></a>
+<a name="individuals"></a>
 
-### 2.6 Constructs for Indiviuals and RDF data
+### 2.6 Individuals
+
+<a name="individuals-class-membership"></a>
+
+### 2.6.1 Class Membership
 
 <table style="width:100%">
   <tr>
@@ -600,6 +674,18 @@ The following section applies to both type of properties: <code>owl:ObjectProper
   <tr>
     <td class="first-column"><img src="images/individual_class_2.svg" alt="Individual"></td>
     <td>Option 2 for Individual type definition.</td>
+  </tr>
+</table>
+
+<a name="individuals-property-values"></a>
+
+### 2.6.2 Property Values
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:25%">Description</th>
   </tr>
 
   <tr>

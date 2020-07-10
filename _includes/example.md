@@ -5,10 +5,10 @@ The following examples were constructed using the <a href="https://www.draw.io/"
 ### 3.1 SAREF for Building Ontology
 The following figure depicts the <a href="https://ontoology.linkeddata.es/publish/saref4bldg/index-en.html#https://w3id.org/def/saref4bldg#PhysicalObject">SAREF4Building</a> Ontology. The <b>OWL code</b> is available in this <a href="resources/s4bldg.ttl">link</a>.
 
-![SAREF4Building Example](images/saref4building.jpg "SAREF4Building Example")
+![SAREF4Building Example](images/saref4building.svg "SAREF4Building Example")
 
 
 ### 3.2 BIMERR Building Ontology
 The following figure depicts the <a href="https://bimerr.iot.linkeddata.es/def/building/">BIMERR Building</a> Ontology. The <b>OWL code</b> is available in this <a href="resources/building.ttl">link</a>.
 
-![BIMERR Building Example](images/bimerr_building.jpg "BIMERR Building Example")
+![BIMERR Building Example](images/bimerr_building.svg "BIMERR Building Example")

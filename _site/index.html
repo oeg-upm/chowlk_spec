@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=77885cd87d18bc31c01f8f1c71993d0003211c5b">
+    <link rel="stylesheet" href="/assets/css/style.css?v=23441e4b1d12e519604fc606b0e65f6cf394b013">
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -74,7 +74,10 @@ Apache 2.0 License</p>
           <li><a href="#universal-restrictions-for-object-properties">Universal Restrictions</a></li>
           <li><a href="#existential-restrictions-for-object-properties">Existential Restrictions</a></li>
           <li><a href="#cardinality-restrictions-for-object-properties">Cardinality Restrictions</a></li>
-          <li><a href="#other-characteristics-of-object-properties">Other Characteristics</a></li>
+          <li><a href="#functional-object-properties">Functional Properties</a></li>
+          <li><a href="#inverse-functional-object-properties">Inverse Functional Properties</a></li>
+          <li><a href="#symmetric-object-properties">Symmetric Properties</a></li>
+          <li><a href="#transitive-object-properties">Transitive Properties</a></li>
           <li><a href="#domain-and-range-for-object-properties">Domain and Range</a></li>
         </ol>
       </li>
@@ -83,12 +86,23 @@ Apache 2.0 License</p>
           <li><a href="#universal-restrictions-for-datatype-properties">Universal Restrictions</a></li>
           <li><a href="#existential-restrictions-for-datatype-properties">Existential Restrictions</a></li>
           <li><a href="#cardinality-restrictions-for-datatype-properties">Cardinality Restrictions</a></li>
-          <li><a href="#other-characteristics-of-datatype-properties">Other Characteristics</a></li>
+          <li><a href="#functional-datatype-properties">Functional Properties</a></li>
           <li><a href="#domain-and-range-for-datatype-properties">Domain and Range</a></li>
         </ol>
       </li>
-      <li><a href="#relations-between-properties">Relations between Properties</a></li>
-      <li><a href="#constructs-for-indiviuals-and-rdf-data">Constructs for Indiviuals and RDF data</a></li>
+      <li><a href="#relations-between-properties">Relations between Properties</a>
+        <ol>
+          <li><a href="#sub-property">Sub-Property</a></li>
+          <li><a href="#equivalent-property">Equivalent Property</a></li>
+          <li><a href="#inverse-property">Inverse Property</a></li>
+        </ol>
+      </li>
+      <li><a href="#individuals">Individuals</a>
+        <ol>
+          <li><a href="#individuals-class-membership">Class Membership</a></li>
+          <li><a href="#individuals-property-values">Property Values</a></li>
+        </ol>
+      </li>
     </ol>
   </li>
   <li><a href="#example">Example</a></li>
@@ -378,9 +392,9 @@ Apache 2.0 License</p>
   </tr>
   </table>
 
-<p><a name="other-characteristics-of-object-properties"></a></p>
+<p><a name="functional-object-properties"></a></p>
 
-<h3 id="234-other-characteristics">2.3.4 Other Characteristics</h3>
+<h3 id="234-functional-properties">2.3.4 Functional Properties</h3>
 
 <table style="width:100%">
   <tr>
@@ -401,6 +415,19 @@ Apache 2.0 License</p>
     <td class="first-column"><img src="images/functional_op_2.svg" alt="Functional OP block" /></td>
     <td>Option 2 for a functional property.</td>
   </tr>
+</table>
+
+<p><a name="inverse-functional-object-properties"></a></p>
+
+<h3 id="235-inverse-functional-properties">2.3.5 Inverse Functional Properties</h3>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:25%">Description</th>
+  </tr>
+
   <tr>
     <td class="first-column"><img src="images/inverse_functional_op_1.svg" alt="Inverse Functional OP block" /></td>
     <td rowspan="2">
@@ -413,6 +440,19 @@ Apache 2.0 License</p>
     <td class="first-column"><img src="images/inverse_functional_op_2.svg" alt="Inverse Functional OP block" /></td>
     <td>Option 2 for an inverse functional property.</td>
   </tr>
+</table>
+
+<p><a name="symmetric-object-properties"></a></p>
+
+<h3 id="236-symmetric-properties">2.3.6 Symmetric Properties</h3>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:25%">Description</th>
+  </tr>
+
   <tr>
     <td class="first-column"><img src="images/symmetric_op_1.svg" alt="Symmetric OP block" /></td>
     <td rowspan="2">
@@ -425,6 +465,19 @@ Apache 2.0 License</p>
     <td class="first-column"><img src="images/symmetric_op_2.svg" alt="Symmetric OP block" /></td>
     <td>Option 2 for a symmetric property.</td>
   </tr>
+</table>
+
+<p><a name="transitive-object-properties"></a></p>
+
+<h3 id="237-transitive-properties">2.3.7 Transitive Properties</h3>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:25%">Description</th>
+  </tr>
+
   <tr>
     <td class="first-column"><img src="images/transitive_op_1.svg" alt="Transitive OP block" /></td>
     <td rowspan="2">
@@ -437,11 +490,11 @@ Apache 2.0 License</p>
     <td class="first-column"><img src="images/transitive_op_2.svg" alt="Transitive OP block" /></td>
     <td>Option 2 for a transitive property.</td>
   </tr>
-  </table>
+</table>
 
 <p><a name="domain-and-range-for-object-properties"></a></p>
 
-<h3 id="235-domain-and-range">2.3.5 Domain and Range</h3>
+<h3 id="238-domain-and-range">2.3.8 Domain and Range</h3>
 
 <table style="width:100%">
 
@@ -571,9 +624,9 @@ Apache 2.0 License</p>
   </tr>
   </table>
 
-<p><a name="other-characteristics-of-datatype-properties"></a></p>
+<p><a name="functional-datatype-properties"></a></p>
 
-<h3 id="244-other-characteristics">2.4.4 Other Characteristics</h3>
+<h3 id="244-functional-properties">2.4.4 Functional Properties</h3>
 
 <table style="width:100%">
   <tr>
@@ -642,6 +695,11 @@ Apache 2.0 License</p>
 <h3 id="25-relations-between-properties">2.5 Relations between Properties</h3>
 
 <p>The following section applies to both type of properties: <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>. For demonstration purposes we will only use object properties in the examples. It is also indicated if the OWL construct applies to object properties, datatype properties, or both.</p>
+
+<p><a name="sub-property"></a></p>
+
+<h3 id="251-sub-property">2.5.1 Sub-Property</h3>
+
 <table style="width:100%">
   <tr>
     <th style="width:35%">Diagram BLOCK</th>
@@ -658,6 +716,19 @@ Apache 2.0 License</p>
     <td class="first-column"><img src="images/subproperty_2.svg" alt="Subproperty" /></td>
     <td>Option 2 for a sub-property relationship between two object properties. This construct applies to <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>.</td>
   </tr>
+</table>
+
+<p><a name="equivalent-property"></a></p>
+
+<h3 id="252-equivalent-property">2.5.2 Equivalent Property</h3>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:25%">Description</th>
+  </tr>
+
   <tr>
     <td class="first-column"><img src="images/equivalent_property_1.svg" alt="Equivalent Property" /></td>
     <td rowspan="2"><code>ns:objectProperty1 owl:equivalentProperty ns:objectProperty2</code></td>
@@ -667,6 +738,19 @@ Apache 2.0 License</p>
     <td class="first-column"><img src="images/equivalent_property_2.svg" alt="Equivalent Property" /></td>
     <td>Option 2 for an equivalence relationship between two object properties. This construct applies to <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>.</td>
   </tr>
+</table>
+
+<p><a name="inverse-property"></a></p>
+
+<h3 id="253-inverse-property">2.5.3 Inverse Property</h3>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:25%">Description</th>
+  </tr>
+
   <tr>
     <td class="first-column"><img src="images/inverse_property_1.svg" alt="Inverse" /></td>
     <td rowspan="2"><code>ns:objectProperty1 owl:inverseOf ns:objectProperty2</code></td>
@@ -678,9 +762,13 @@ Apache 2.0 License</p>
   </tr>
 </table>
 
-<p><a name="constructs-for-indiviuals-and-rdf-data"></a></p>
+<p><a name="individuals"></a></p>
 
-<h3 id="26-constructs-for-indiviuals-and-rdf-data">2.6 Constructs for Indiviuals and RDF data</h3>
+<h3 id="26-individuals">2.6 Individuals</h3>
+
+<p><a name="individuals-class-membership"></a></p>
+
+<h3 id="261-class-membership">2.6.1 Class Membership</h3>
 
 <table style="width:100%">
   <tr>
@@ -698,6 +786,18 @@ Apache 2.0 License</p>
   <tr>
     <td class="first-column"><img src="images/individual_class_2.svg" alt="Individual" /></td>
     <td>Option 2 for Individual type definition.</td>
+  </tr>
+</table>
+
+<p><a name="individuals-property-values"></a></p>
+
+<h3 id="262-property-values">2.6.2 Property Values</h3>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:25%">Description</th>
   </tr>
 
   <tr>
@@ -721,12 +821,12 @@ Apache 2.0 License</p>
 <h3 id="31-saref-for-building-ontology">3.1 SAREF for Building Ontology</h3>
 <p>The following figure depicts the <a href="https://ontoology.linkeddata.es/publish/saref4bldg/index-en.html#https://w3id.org/def/saref4bldg#PhysicalObject">SAREF4Building</a> Ontology. The <b>OWL code</b> is available in this <a href="resources/s4bldg.ttl">link</a>.</p>
 
-<p><img src="images/saref4building.jpg" alt="SAREF4Building Example" title="SAREF4Building Example" /></p>
+<p><img src="images/saref4building.svg" alt="SAREF4Building Example" title="SAREF4Building Example" /></p>
 
 <h3 id="32-bimerr-building-ontology">3.2 BIMERR Building Ontology</h3>
 <p>The following figure depicts the <a href="https://bimerr.iot.linkeddata.es/def/building/">BIMERR Building</a> Ontology. The <b>OWL code</b> is available in this <a href="resources/building.ttl">link</a>.</p>
 
-<p><img src="images/bimerr_building.jpg" alt="BIMERR Building Example" title="BIMERR Building Example" /></p>
+<p><img src="images/bimerr_building.svg" alt="BIMERR Building Example" title="BIMERR Building Example" /></p>
 
 <p><a name="service"></a></p>
 <h2 id="4-chowlk-code-generation-service">4. CHOWLK Code Generation Service</h2>
