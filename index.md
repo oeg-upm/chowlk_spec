@@ -1,8 +1,8 @@
 # Chowlk Specification
 
 **Authors:**<br>
-[María Poveda-Villalón](http://w3id.org/people/mpoveda) ([Universidad Politécnica de Madrid](https://www.upm.es/))<br>
-[Serge Chávez-Feria](http://w3id.org/people/serge) ([Universidad Politécnica de Madrid](https://www.upm.es/))
+[María Poveda-Villalón](http://w3id.org/people/mpoveda) ([Ontology Engineering Group](https://www.oeg-upm.net/), [Universidad Politécnica de Madrid](https://www.upm.es/))<br>
+[Serge Chávez-Feria](http://w3id.org/people/serge) ([Ontology Engineering Group](https://www.oeg-upm.net/), [Universidad Politécnica de Madrid](https://www.upm.es/))
 
 **License:**<br>
 Apache 2.0 License
