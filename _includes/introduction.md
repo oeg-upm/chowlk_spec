@@ -3,5 +3,5 @@ This document describes Chowlk, a visual notation specification to construct ont
 
 The specification comes with the following resources:
 
-* <a href="" download>Chowlk Library</a>: This library contains the whole set of visual blocks detailed in this document.
+* <a href="resources/chowlk-drawio-library.xml" download>Chowlk Library</a>: This drawio library contains the whole set of visual blocks detailed in this document.
 * <a href="https://chowlk.herokuapp.com/">Code Generation Service</a>: A web service to automatically generate the OWL code of your ontology if you follow this specification.

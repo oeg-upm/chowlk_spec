@@ -1,6 +1,6 @@
 ## 3. Example
 
-The following examples were constructed using the <a href="https://www.draw.io/">drawio</a> graphic environment, and the guidelines detailed in this specification. Aditionally, the OWL code for each case was generated using the <a href="">Code Generation Service</a>.
+The following examples were constructed using the <a href="https://www.draw.io/">drawio</a> graphic environment, and the guidelines detailed in this specification. Aditionally, the OWL code for each case was generated using the <a href="https://chowlk.herokuapp.com/">Code Generation Service</a>.
 
 ### 3.1 SAREF for Building Ontology
 The following figure depicts the <a href="https://ontoology.linkeddata.es/publish/saref4bldg/index-en.html#https://w3id.org/def/saref4bldg#PhysicalObject">SAREF4Building</a> Ontology. The <b>OWL code</b> is available in this <a href="resources/s4bldg.ttl">link</a>.
