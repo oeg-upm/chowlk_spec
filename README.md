@@ -1,3 +1,5 @@
+![Logo](https://github.com/oeg-upm/chowlk_spec/blob/master/resources/logo.svg)
+
 # Chowlk Specification
 
 <b>Authors:</b>
