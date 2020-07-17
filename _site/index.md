@@ -1,4 +1,4 @@
-# Chowlk Specification
+# Chowlk Visual Notation
 
 **Authors:**<br>
 [María Poveda-Villalón](http://w3id.org/people/mpoveda) ([Ontology Engineering Group](https://www.oeg-upm.net/), [Universidad Politécnica de Madrid](https://www.upm.es/))<br>
