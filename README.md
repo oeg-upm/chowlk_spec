@@ -1,6 +1,6 @@
 ![Logo](https://github.com/oeg-upm/chowlk_spec/blob/master/resources/logo.svg)
 
-# Chowlk Specification
+# Chowlk Ontology Visual Notation
 
 <b>Authors:</b>
 María Poveda-Villalón
