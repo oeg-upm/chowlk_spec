@@ -1,4 +1,4 @@
-![Logo](https://github.com/oeg-upm/chowlk_spec/blob/master/resources/logo.svg)
+![Logo](https://github.com/oeg-upm/chowlk_spec/blob/master/resources/logo.png)
 
 # Chowlk Ontology Visual Notation
 
