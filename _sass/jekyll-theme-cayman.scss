@@ -108,7 +108,7 @@ a {
 .logo {
   text-align: center;
   background-color: $header-bg-color-logo;
-  width: 100%;
+  max-width: 100%;
 }
 
 .page-header {
