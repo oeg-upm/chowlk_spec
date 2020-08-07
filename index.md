@@ -13,9 +13,7 @@ Apache 2.0 License
 
 The following video shows you how to start conceptualizing your ontology using drawio and this notation.
 
-<video width="640" height="400" muted autoplay controls>
-  <source src="/resources/getting_started.mp4" type="video/mp4">
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aTAvtkPCdMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Table of Content
 
