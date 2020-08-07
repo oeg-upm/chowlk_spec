@@ -1,6 +1,6 @@
 ## 2. Specification
 
-This sections gives detailed information about the drawio blocks used to represent the OWL ontological elements utilized in the construction of an ontology. The specification is structured around the three main elements in an ontology: <code>owl:Class</code>, <code>owl:ObjectProperty</code> and <code>owl:DatatypeProperty</code>. Each table in the sub-sections contains not only the diagram block but also the equivalent owl code, and a description of the element.
+This sections gives detailed information about the diagraming blocks used to represent the OWL  elements used in the construction of an ontology. The specification is structured around the three main elements in an ontology: <code>owl:Class</code>, <code>owl:ObjectProperty</code> and <code>owl:DatatypeProperty</code>. Each table in the sub-sections contains not only the diagram block but also the equivalent owl code, and a description of the element.
 
 <a name="basic-elements"></a>
 
