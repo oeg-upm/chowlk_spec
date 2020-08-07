@@ -14,10 +14,15 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 
   <tr>
-    <td class="first-column"><img src="images/rectangle.svg" alt="Class block"></td>
+    <td class="first-column"><img src="images/class.svg" alt="Class block"></td>
     <td>Block to represent named and unnamed classes, as well as individual elements within the ontology conceptualization. The content of the block should be accompanied with the prefix and the name of the concept on order to fully identify it.</td>
-    <td><code>owl:Class</code><br>
-    <code>owl:Individual</code></td>
+    <td><code>owl:Class</code><br></td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/individual.svg" alt="Class block"></td>
+    <td>Block to represent named and unnamed classes, as well as individual elements within the ontology conceptualization. The content of the block should be accompanied with the prefix and the name of the concept on order to fully identify it.</td>
+    <td><code>owl:Individual</code></td>
   </tr>
 
   <tr>
@@ -27,40 +32,21 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 
   <tr>
-    <td class="first-column"><img src="images/subclass_arrow.svg" alt="Sub-class block"></td>
+    <td class="first-column"><img src="images/subclass_arrow.svg" alt="Sub-class relationship block"></td>
     <td>Special arrow to indicate sub-class relationship between two classes.</td>
     <td><code>owl:subClassOf</code></td>
   </tr>
 
   <tr>
-    <td class="first-column"><img src="images/type_arrow.svg" alt="Sub-class block"></td>
-    <td>Special arrow to represent several relationships between elements of this specification. It can be used to indicate <code>rdf:type</code> relationships, <code>owl:subClassOf</code> relationships, or to connect a <code>owl:unionOf</code> axiom with all the concepts it is composed of.</td>
-    <td><code>rdf:type</code><br>
-    <code>owl:subClassOf</code></td>
+    <td class="first-column"><img src="images/type_arrow.svg" alt="Type relationship block"></td>
+    <td>Special arrow to represent several relationships between elements of this specification. It can be used to indicate <code>rdf:type</code> relationships, or to connect a <code>owl:unionOf</code> axiom with all the concepts it is composed of.</td>
+    <td><code>rdf:type</code></td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/datatype_rectangle.svg" alt="Datatype property block"></td>
     <td>Standard way to represent datatype properties attached to a specific <code>owl:Class</code> element. Variations can apply to the type of outer line depending on the domain and range specification. For more details see section 2.11.</td>
     <td><code>owl:DatatypeProperty</code></td>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/diamond.svg" alt="Property block"></td>
-    <td>Alternative option to represent object properties and datatype properties. Mainly used to represent relationships between properties. For more details see section 2.14.</td>
-    <td><code>owl:ObjectProperty</code><br>
-    <code>owl:DatatypeProperty</code></td>
-  </tr>
-
-
-  <tr>
-    <td class="first-column"><img src="images/circle.svg" alt="Circle block"></td>
-    <td>Block to indicate intersection or union of two or more <code>owl:Class</code> elements. Additionally, it can be used to determine equivalence and disjoint relationships between concepts.</td>
-    <td><code>owl:intersectionOf</code><br>
-      <code>owl:unionOf</code><br>
-      <code>owl:equivalentClass</code><br>
-      <code>owl:disjointWith</code><br>
-    </td>
   </tr>
 
   <tr>
@@ -80,9 +66,38 @@ This sections gives detailed information about the drawio blocks used to represe
 
 ### 2.2 Classes
 
+<a name="class-definition"></a>
+
+### 2.2.1 Class Definition
+
+<table style="width:100%">
+
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+  
+  <tr>
+    <td class="first-column"><img src="images/named_class.svg" alt="Named Class"></td>
+    <td>Definition for a named class.</td>
+    <td rowspan="3"><code>owl:Class</code></td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/unnamed_class_1.svg" alt="Unnamed Class"></td>
+    <td>Definition of an unnamed class. Usually used to represent axioms.</td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/unnamed_class_2.svg" alt="Unnamed Class"></td>
+    <td>Definition of an unnamed class to represent logical combinations between other classes, such as AND or OR operators</td>
+  </tr>
+
+
+</table>
+
 <a name="sub-class"></a>
 
-### 2.2.1 Sub-Class
+### 2.2.2 Sub-Class
 
 <table style="width:100%">
 
@@ -106,7 +121,7 @@ This sections gives detailed information about the drawio blocks used to represe
 
 <a name="equivalent-disjoint-classes"></a>
 
-### 2.2.2 Equivalent and Disjoint Classes
+### 2.2.3 Equivalent and Disjoint Classes
 
 <table style="width:100%">
 
@@ -141,7 +156,7 @@ This sections gives detailed information about the drawio blocks used to represe
 
 <a name="intersection-union-complement-classes"></a>
 
-### 2.2.3 Intersection, Union and Complement of Classes
+### 2.2.4 Intersection, Union and Complement of Classes
 
 <table style="width:100%">
 
@@ -185,200 +200,9 @@ This sections gives detailed information about the drawio blocks used to represe
 
 ### 2.3 Object Properties
 
-<a name="universal-restrictions-for-object-properties"></a>
-
-### 2.3.1 Universal Restrictions
-
-<table style="width:100%">
-  <tr>
-    <th style="width:35%">Diagram BLOCK</th>
-    <th style="width:25%">Description</th>
-    <th style="width:40%">OWL Element</th>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/universal_restriction_op_1.svg" alt="Universal restriction block"></td>
-    <td>Option 1 for a universal restriction between 2 concepts. <code>ns:Class1</code> is subclass of an anonymus concept which has an object property <code>ns:objectProperty</code>, and all the individuals for this property shall come from <code>ns:Class2</code></td>
-    <td rowspan="3"><code>ns:Class1 rdf:type owl:Class ;<br></code>
-    <code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-    <code>owl:onProperty ns:objectProperty ;<br></code>
-    <code>owl:allValuesFrom ns:Class2 ] .</code></td>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/universal_restriction_op_2.svg" alt="Universal restriction block"></td>
-    <td>Option 2 for a universal restriction with an object property.</td>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/universal_restriction_op_3.svg" alt="Universal restriction block"></td>
-    <td>Option 3 for a universal restriction with an object property.</td>
-  </tr>
-</table>
-
-<a name="existential-restrictions-for-object-properties"></a>
-
-### 2.3.2 Existential Restrictions
-
-<table style="width:100%">
-  <tr>
-    <th style="width:35%">Diagram BLOCK</th>
-    <th style="width:25%">Description</th>
-    <th style="width:40%">OWL Element</th>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/existential_restriction_op_1.svg" alt="Existential restriction block"></td>
-    <td>Option 1 for an existential restriction between 2 concepts. <code>ns:Class1</code> is subclass of an anonymus concept which has an object property <code>ns:objectProperty</code>, and some the individuals for this property shall come from <code>ns:Class2</code></td>
-    <td rowspan="3"><code>ns:Class1 rdf:type owl:Class ;<br></code>
-    <code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-    <code>owl:onProperty ns:objectProperty ;<br></code>
-    <code>owl:someValuesFrom ns:Class2 ] .</code></td>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/existential_restriction_op_2.svg" alt="Existential restriction block"></td>
-    <td>Option 2 of an existential restriction between 2 concepts.</td>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/existential_restriction_op_3.svg" alt="Existential restriction block"></td>
-    <td>Option 3 of an existential restriction between 2 concepts.</td>
-  </tr>
-</table>
-
-<a name="cardinality-restrictions-for-object-properties"></a>
-
-### 2.3.3 Cardinality Restrictions
-
-<table style="width:100%">
-  <tr>
-    <th style="width:35%">Diagram BLOCK</th>
-    <th style="width:25%">Description</th>
-    <th style="width:40%">OWL Element</th>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/cardinality_restriction_op.svg" alt="Cardinality restriction block"></td>
-    <td>Cardinality restriction of a concept on an object property. <code>ns:Class1</code> is subclass of an anonymus concept which has an object property <code>ns:objectProperty</code>, and shall have at least N1 and at most N2 individuals from class <code>ns:Class2</code>. If the N2 element is equal to the letter N, it means <code>owl:maxQualifiedCardinality</code> does not exist.</td>
-    <td>
-    <code>ns:Class1 rdf:type owl:Class ;<br></code>
-    <code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-    <code>owl:onProperty ns:objectProperty ;<br></code>
-    <code>owl:minQualifiedCardinality "N1"^^xsd:nonNegativeInteger ;<br></code>
-    <code>owl:onClass ns:Class2 ] ,<br></code>
-    <code>[ rdf:type owl:Restriction ;<br></code>
-    <code>owl:onProperty ns:objectProperty ;<br></code>
-    <code>owl:maxQualifiedCardinality "N2"^^xsd:nonNegativeInteger ;<br></code>
-    <code>owl:onClass ns:Class2 ] .</code><br>
-    </td>
-  </tr>
-  </table>
-
-<a name="functional-object-properties"></a>
-
-### 2.3.4 Functional Properties
-
-<table style="width:100%">
-  <tr>
-    <th style="width:35%">Diagram BLOCK</th>
-    <th style="width:25%">Description</th>
-    <th style="width:40%">OWL Element</th>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/functional_op_1.svg" alt="Functional OP block"></td>
-    <td>Option 1 for functional property.</td>
-    <td rowspan="2">
-      <code>ns:objectProperty rdf:type owl:ObjectProperty ,<br></code>
-      <code>owl:FunctionalProperty .</code>
-    </td>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/functional_op_2.svg" alt="Functional OP block"></td>
-    <td>Option 2 for a functional property.</td>
-  </tr>
-</table>
-
-<a name="inverse-functional-object-properties"></a>
-
-### 2.3.5 Inverse Functional Properties
-
-<table style="width:100%">
-  <tr>
-    <th style="width:35%">Diagram BLOCK</th>
-    <th style="width:25%">Description</th>
-    <th style="width:40%">OWL Element</th>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/inverse_functional_op_1.svg" alt="Inverse Functional OP block"></td>
-    <td>Option 1 for an inverse functional property.</td>
-    <td rowspan="2">
-      <code>ns:objectProperty rdf:type owl:ObjectProperty ,<br></code>
-      <code>owl:InverseFunctionalProperty .</code>
-    </td>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/inverse_functional_op_2.svg" alt="Inverse Functional OP block"></td>
-    <td>Option 2 for an inverse functional property.</td>
-  </tr>
-</table>
-
-<a name="symmetric-object-properties"></a>
-
-### 2.3.6 Symmetric Properties
-
-<table style="width:100%">
-  <tr>
-    <th style="width:35%">Diagram BLOCK</th>
-    <th style="width:25%">Description</th>
-    <th style="width:40%">OWL Element</th>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/symmetric_op_1.svg" alt="Symmetric OP block"></td>
-    <td>Option 1 for a symmetric property.</td>
-    <td rowspan="2">
-      <code>ns:objectProperty rdf:type owl:ObjectProperty ,<br></code>
-      <code>owl:SymmetricProperty .</code>
-    </td>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/symmetric_op_2.svg" alt="Symmetric OP block"></td>
-    <td>Option 2 for a symmetric property.</td>
-  </tr>
-</table>
-
-<a name="transitive-object-properties"></a>
-
-### 2.3.7 Transitive Properties
-
-<table style="width:100%">
-  <tr>
-    <th style="width:35%">Diagram BLOCK</th>
-    <th style="width:25%">Description</th>
-    <th style="width:40%">OWL Element</th>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/transitive_op_1.svg" alt="Transitive OP block"></td>
-    <td>Option 1 for a transitive property.</td>
-    <td rowspan="2">
-      <code>ns:objectProperty rdf:type owl:ObjectProperty ,<br></code>
-      <code>owl:TransitiveProperty .</code>
-    </td>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/transitive_op_2.svg" alt="Transitive OP block"></td>
-    <td>Option 2 for a transitive property.</td>
-  </tr>
-</table>
-
-
 <a name="domain-and-range-for-object-properties"></a>
 
-### 2.3.8 Domain and Range
+### 2.3.1 Domain and Range
 
 <table style="width:100%">
 
@@ -414,19 +238,219 @@ This sections gives detailed information about the drawio blocks used to represe
   </tr>
 
   <tr>
-    <td class="first-column"><img src="images/yes_domain_no_range_op.svg" alt="Domain and Range"></td>
-    <td>Object property <code>ns:objectProperty</code> with domain but without range.</td>
-    <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
+    <td class="first-column"><img src="images/yes_domain_no_range_op_1.svg" alt="Domain and Range"></td>
+    <td>Option 1 for object property <code>ns:objectProperty</code> with domain but without range.</td>
+    <td rowspan="2"><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
     <code>rdfs:domain ns:Class1 .</code></td>
   </tr>
 
   <tr>
-    <td class="first-column"><img src="images/no_domain_yes_range_op.svg" alt="Domain and Range"></td>
+    <td class="first-column"><img src="images/yes_domain_no_range_op_2.svg" alt="Domain and Range"></td>
+    <td>Option 2 for object property <code>ns:objectProperty</code> with domain but without range.</td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/no_domain_yes_range_op_1.svg" alt="Domain and Range"></td>
     <td>Object property <code>ns:objectProperty</code> with range but without domain.</td>
-    <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
+    <td rowspan="2"><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
     <code>rdfs:range ns:Class2 .</code></td>
   </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/no_domain_yes_range_op_2.svg" alt="Domain and Range"></td>
+    <td>Option 2 object property <code>ns:objectProperty</code> with range but without domain.</td>
+  </tr>
   </table>
+
+<a name="universal-restrictions-for-object-properties"></a>
+
+### 2.3.2 Universal Restrictions
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/universal_restriction_op_1.svg" alt="Universal restriction block"></td>
+    <td>Option 1 for a universal restriction between 2 concepts. <code>ns:Class1</code> is subclass of an anonymus concept which has an object property <code>ns:objectProperty</code>, and all the individuals for this property shall come from <code>ns:Class2</code></td>
+    <td rowspan="3"><code>ns:Class1 rdf:type owl:Class ;<br></code>
+    <code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+    <code>owl:onProperty ns:objectProperty ;<br></code>
+    <code>owl:allValuesFrom ns:Class2 ] .</code></td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/universal_restriction_op_2.svg" alt="Universal restriction block"></td>
+    <td>Option 2 for a universal restriction with an object property.</td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/universal_restriction_op_3.svg" alt="Universal restriction block"></td>
+    <td>Option 3 for a universal restriction with an object property.</td>
+  </tr>
+</table>
+
+<a name="existential-restrictions-for-object-properties"></a>
+
+### 2.3.3 Existential Restrictions
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/existential_restriction_op_1.svg" alt="Existential restriction block"></td>
+    <td>Option 1 for an existential restriction between 2 concepts. <code>ns:Class1</code> is subclass of an anonymus concept which has an object property <code>ns:objectProperty</code>, and some the individuals for this property shall come from <code>ns:Class2</code></td>
+    <td rowspan="3"><code>ns:Class1 rdf:type owl:Class ;<br></code>
+    <code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+    <code>owl:onProperty ns:objectProperty ;<br></code>
+    <code>owl:someValuesFrom ns:Class2 ] .</code></td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/existential_restriction_op_2.svg" alt="Existential restriction block"></td>
+    <td>Option 2 of an existential restriction between 2 concepts.</td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/existential_restriction_op_3.svg" alt="Existential restriction block"></td>
+    <td>Option 3 of an existential restriction between 2 concepts.</td>
+  </tr>
+</table>
+
+<a name="cardinality-restrictions-for-object-properties"></a>
+
+### 2.3.4 Cardinality Restrictions
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/cardinality_restriction_op.svg" alt="Cardinality restriction block"></td>
+    <td>Cardinality restriction of a concept on an object property. <code>ns:Class1</code> is subclass of an anonymus concept which has an object property <code>ns:objectProperty</code>, and shall have at least N1 and at most N2 individuals from class <code>ns:Class2</code>. If the N2 element is equal to the letter N, it means <code>owl:maxQualifiedCardinality</code> does not exist.</td>
+    <td>
+    <code>ns:Class1 rdf:type owl:Class ;<br></code>
+    <code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+    <code>owl:onProperty ns:objectProperty ;<br></code>
+    <code>owl:minQualifiedCardinality "N1"^^xsd:nonNegativeInteger ;<br></code>
+    <code>owl:onClass ns:Class2 ] ,<br></code>
+    <code>[ rdf:type owl:Restriction ;<br></code>
+    <code>owl:onProperty ns:objectProperty ;<br></code>
+    <code>owl:maxQualifiedCardinality "N2"^^xsd:nonNegativeInteger ;<br></code>
+    <code>owl:onClass ns:Class2 ] .</code><br>
+    </td>
+  </tr>
+  </table>
+
+<a name="functional-object-properties"></a>
+
+### 2.3.5 Functional Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/functional_op_1.svg" alt="Functional OP block"></td>
+    <td>Option 1 for functional property.</td>
+    <td rowspan="2">
+      <code>ns:objectProperty rdf:type owl:ObjectProperty ,<br></code>
+      <code>owl:FunctionalProperty .</code>
+    </td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/functional_op_2.svg" alt="Functional OP block"></td>
+    <td>Option 2 for a functional property.</td>
+  </tr>
+</table>
+
+<a name="inverse-functional-object-properties"></a>
+
+### 2.3.6 Inverse Functional Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/inverse_functional_op_1.svg" alt="Inverse Functional OP block"></td>
+    <td>Option 1 for an inverse functional property.</td>
+    <td rowspan="2">
+      <code>ns:objectProperty rdf:type owl:ObjectProperty ,<br></code>
+      <code>owl:InverseFunctionalProperty .</code>
+    </td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/inverse_functional_op_2.svg" alt="Inverse Functional OP block"></td>
+    <td>Option 2 for an inverse functional property.</td>
+  </tr>
+</table>
+
+<a name="symmetric-object-properties"></a>
+
+### 2.3.7 Symmetric Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/symmetric_op_1.svg" alt="Symmetric OP block"></td>
+    <td>Option 1 for a symmetric property.</td>
+    <td rowspan="2">
+      <code>ns:objectProperty rdf:type owl:ObjectProperty ,<br></code>
+      <code>owl:SymmetricProperty .</code>
+    </td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/symmetric_op_2.svg" alt="Symmetric OP block"></td>
+    <td>Option 2 for a symmetric property.</td>
+  </tr>
+</table>
+
+<a name="transitive-object-properties"></a>
+
+### 2.3.8 Transitive Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/transitive_op_1.svg" alt="Transitive OP block"></td>
+    <td>Option 1 for a transitive property.</td>
+    <td rowspan="2">
+      <code>ns:objectProperty rdf:type owl:ObjectProperty ,<br></code>
+      <code>owl:TransitiveProperty .</code>
+    </td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/transitive_op_2.svg" alt="Transitive OP block"></td>
+    <td>Option 2 for a transitive property.</td>
+  </tr>
+</table>
 
 
 <a name="datatype-properties"></a>
@@ -435,109 +459,9 @@ This sections gives detailed information about the drawio blocks used to represe
 
 <a name="universal-restrictions-for-datatype-properties"></a>
 
-### 2.4.1 Universal Restrictions
-
-<table style="width:100%">
-  <tr>
-    <th style="width:35%">Diagram BLOCK</th>
-    <th style="width:25%">Description</th>
-    <th style="width:40%">OWL Element</th>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/universal_restriction_dp_1.svg" alt="Universal restriction block"></td>
-    <td>Option 1 for an universal restriction between a concept and a datatype. <code>ns:Class</code> is subclass of an anonymus concept which has a datatype property <code>ns:datatypeProperty</code>, and all the values must be of type <code>datatype</code>.</td>
-    <td rowspan="2"><code>ns:Class rdf:type owl:Class ;<br></code>
-    <code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-    <code>owl:onProperty ns:datatypeProperty ;<br></code>
-    <code>owl:allValuesFrom datatype ] .</code>
-    </td>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/universal_restriction_dp_2.svg" alt="Universal restriction block"></td>
-    <td>Option 2 for an universal restriction between a concept and a datatype.</td>
-  </tr>
-</table>
-
-<a name="existential-restrictions-for-datatype-properties"></a>
-
-### 2.4.2 Existential Restrictions
-
-<table style="width:100%">
-  <tr>
-    <th style="width:35%">Diagram BLOCK</th>
-    <th style="width:25%">Description</th>
-    <th style="width:40%">OWL Element</th>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/existential_restriction_dp_1.svg" alt="Existential restriction block"></td>
-    <td>Option 1 for an existential restriction between a concept and a datatype. <code>ns:Class</code> is subclass of an anonymus concept which has a datatype property <code>ns:datatypeProperty</code>, and some values must be of type <code>datatype</code>.</td>
-    <td rowspan="2"><code>ns:Class rdf:type owl:Class ;<br></code>
-    <code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-    <code>owl:onProperty ns:datatypeProperty ;<br></code>
-    <code>owl:someValuesFrom datatype ] .</code>
-    </td>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/existential_restriction_dp_2.svg" alt="Existential restriction block"></td>
-    <td>Option 2 for an existential restriction between a concept and a datatype.</td>
-  </tr>
-</table>
-
-<a name="cardinality-restrictions-for-datatype-properties"></a>
-
-### 2.4.3 Cardinality Restrictions
-
-<table style="width:100%">
-  <tr>
-    <th style="width:35%">Diagram BLOCK</th>
-    <th style="width:25%">Description</th>
-    <th style="width:40%">OWL Element</th>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/cardinality_restriction_dp.svg" alt="Cardinality restriction block"></td>
-    <td>Cardinality restriction of a concept on a datatype property. <code>ns:Class</code> is subclass of an anonymus concept which has an datatype property <code>ns:datatypeProperty</code>, and shall have at least N1 and at most N2 values. If the N2 element is equal to the letter N, it means <code>owl:maxCardinality</code> does not exist.</td>
-    <td>
-      <code>ns:Class rdf:type owl:Class ;<br></code>
-      <code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-		  <code>owl:onProperty ns:datatypeProperty ;<br></code>
-			<code>owl:minCardinality "N1"^^xsd:nonNegativeInteger ] ,<br></code>
-      <code>[ rdf:type owl:Restriction ;<br></code>
-			<code>owl:onProperty ns:datatypeProperty ;<br></code>
-			<code>owl:maxCardinality "N2"^^xsd:nonNegativeInteger ] .</code><br>
-    </td>
-  </tr>
-  </table>
-
-<a name="functional-datatype-properties"></a>
-
-### 2.4.4 Functional Properties
-
-<table style="width:100%">
-  <tr>
-    <th style="width:35%">Diagram BLOCK</th>
-    <th style="width:25%">Description</th>
-    <th style="width:40%">OWL Element</th>
-  </tr>
-
-  <tr>
-    <td class="first-column"><img src="images/functional_dp_1.svg" alt="Functional DP block"></td>
-    <td>Option 1 for a functional property.</td>
-    <td rowspan="2">
-      <code>ns:datatypeProperty rdf:type owl:DatatypeProperty ,<br></code>
-      <code>owl:FunctionalProperty .</code>
-    </td>
-  </tr>
-  <tr>
-    <td class="first-column"><img src="images/functional_dp_2.svg" alt="Functional DP block"></td>
-    <td>Option 2 for a functional property.</td>
-  </tr>
-</table>
-
-
 <a name="domain-and-range-for-datatype-properties"></a>
 
-### 2.4.5 Domain and Range
+### 2.4.1 Domain and Range
 
 <table style="width:100%">
 
@@ -575,6 +499,106 @@ This sections gives detailed information about the drawio blocks used to represe
     <code>rdfs:range datatype .<br></code></td>
   </tr>
 </table>
+
+### 2.4.2 Universal Restrictions
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/universal_restriction_dp_1.svg" alt="Universal restriction block"></td>
+    <td>Option 1 for an universal restriction between a concept and a datatype. <code>ns:Class</code> is subclass of an anonymus concept which has a datatype property <code>ns:datatypeProperty</code>, and all the values must be of type <code>datatype</code>.</td>
+    <td rowspan="2"><code>ns:Class rdf:type owl:Class ;<br></code>
+    <code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+    <code>owl:onProperty ns:datatypeProperty ;<br></code>
+    <code>owl:allValuesFrom datatype ] .</code>
+    </td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/universal_restriction_dp_2.svg" alt="Universal restriction block"></td>
+    <td>Option 2 for an universal restriction between a concept and a datatype.</td>
+  </tr>
+</table>
+
+<a name="existential-restrictions-for-datatype-properties"></a>
+
+### 2.4.3 Existential Restrictions
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/existential_restriction_dp_1.svg" alt="Existential restriction block"></td>
+    <td>Option 1 for an existential restriction between a concept and a datatype. <code>ns:Class</code> is subclass of an anonymus concept which has a datatype property <code>ns:datatypeProperty</code>, and some values must be of type <code>datatype</code>.</td>
+    <td rowspan="2"><code>ns:Class rdf:type owl:Class ;<br></code>
+    <code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+    <code>owl:onProperty ns:datatypeProperty ;<br></code>
+    <code>owl:someValuesFrom datatype ] .</code>
+    </td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/existential_restriction_dp_2.svg" alt="Existential restriction block"></td>
+    <td>Option 2 for an existential restriction between a concept and a datatype.</td>
+  </tr>
+</table>
+
+<a name="cardinality-restrictions-for-datatype-properties"></a>
+
+### 2.4.4 Cardinality Restrictions
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/cardinality_restriction_dp.svg" alt="Cardinality restriction block"></td>
+    <td>Cardinality restriction of a concept on a datatype property. <code>ns:Class</code> is subclass of an anonymus concept which has an datatype property <code>ns:datatypeProperty</code>, and shall have at least N1 and at most N2 values. If the N2 element is equal to the letter N, it means <code>owl:maxCardinality</code> does not exist.</td>
+    <td>
+      <code>ns:Class rdf:type owl:Class ;<br></code>
+      <code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+		  <code>owl:onProperty ns:datatypeProperty ;<br></code>
+			<code>owl:minCardinality "N1"^^xsd:nonNegativeInteger ] ,<br></code>
+      <code>[ rdf:type owl:Restriction ;<br></code>
+			<code>owl:onProperty ns:datatypeProperty ;<br></code>
+			<code>owl:maxCardinality "N2"^^xsd:nonNegativeInteger ] .</code><br>
+    </td>
+  </tr>
+  </table>
+
+<a name="functional-datatype-properties"></a>
+
+### 2.4.5 Functional Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/functional_dp_1.svg" alt="Functional DP block"></td>
+    <td>Option 1 for a functional property.</td>
+    <td rowspan="2">
+      <code>ns:datatypeProperty rdf:type owl:DatatypeProperty ,<br></code>
+      <code>owl:FunctionalProperty .</code>
+    </td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/functional_dp_2.svg" alt="Functional DP block"></td>
+    <td>Option 2 for a functional property.</td>
+  </tr>
+</table>
+
 
 
 <a name="relations-between-properties"></a>
