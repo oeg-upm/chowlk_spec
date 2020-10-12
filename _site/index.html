@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=872a9b4ee3d41f78caeb066168ce2dbf70d28afc">
+    <link rel="stylesheet" href="/assets/css/style.css?v=d10dbda07dcff8bb43fab55b8b48ca87d2148934">
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -51,12 +51,15 @@
 <p><strong>License:</strong><br />
 Apache 2.0 License</p>
 
+<p><strong>Cite as:</strong><br />
+Chowlk Visual Notation, Version 0.0.1.</p>
+
 <h2 id="abstract">Abstract</h2>
 <p>This document describes the Chowlk visual notation, a set of recomendations for ontology diagrams representation.</p>
 
 <h2 id="getting-started">Getting Started</h2>
 
-<p>The following video shows you how to start conceptualizing your ontology using drawio and this notation.</p>
+<p>The following video shows you how to start conceptualizing your ontology using <a href="https://diagrams.net/">diagrams.net</a> and this notation.</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aTAvtkPCdMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
@@ -71,8 +74,11 @@ Apache 2.0 License</p>
         <ol>
           <li><a href="#class-definition">Class Definition</a></li>
           <li><a href="#sub-class">Sub-Class</a></li>
-          <li><a href="#equivalent-disjoint-classes">Equivalent and Disjoint Classes</a></li>
-          <li><a href="#intersection-union-complement-classes">Intersection, Union and Complement of Classes</a></li>
+          <li><a href="#equivalent-classes">Equivalent Classes</a></li>
+          <li><a href="#disjoint-classes">Disjoint Classes</a></li>
+          <li><a href="#intersection-classes">Intersection of Classes</a></li>
+          <li><a href="#union-classes">Union of Classes</a></li>
+          <li><a href="#complement-classes">Complement of Classes</a></li>
         </ol>
       </li>
       <li><a href="#object-properties">Object Properties</a>
@@ -119,13 +125,13 @@ Apache 2.0 License</p>
 
 <p><a name="introduction"></a></p>
 <h2 id="1-introduction">1. Introduction</h2>
-<p>This document describes Chowlk, a visual notation specification to construct ontological diagrams. It provides a set of visual blocks to represent each element from the <a href="https://www.w3.org/TR/owl-ref/">OWL</a> ontology implementation language. The specification allows the representation of high-level as well as fine-grained constructs from the OWL language, giving the user the freedom to choose the level of expresiveness for their conceptualization. In order to use the visual blocks from this specification you could also your favourite diagraming tool but we recomend using <a href="https://www.draw.io/">drawio</a> as the following resources are available for working with <a href="https://www.draw.io/">drawio</a>.</p>
+<p>This document describes Chowlk, a visual notation specification to construct ontological diagrams. It provides a set of visual blocks to represent each element from the <a href="https://www.w3.org/TR/owl-ref/">OWL</a> ontology implementation language. The specification allows the representation of high-level as well as fine-grained constructs from the OWL language, giving the user the freedom to choose the level of expresiveness for their conceptualization. In order to use the visual blocks from this specification you could also your favourite diagraming tool but we recomend using <a href="https://diagrams.net/">diagrams.net</a> as the following resources are available for working with <a href="https://diagrams.net/">diagrams.net</a>.</p>
 
 <!--The visual notation specification comes with the following resources: -->
 
 <ul>
-  <li><a href="resources/chowlk-drawio-library.xml" download="">Chowlk Library</a>: This drawio library contains the whole set of visual blocks detailed in this document.</li>
-  <li><a href="https://chowlk.herokuapp.com/">Code Generation Service</a>: A web service to automatically generate the OWL code of your ontology if you follow this specification.</li>
+  <li><a href="resources/chowlk-drawio-library.xml" download="">Chowlk Library</a>: This diagrams.net library contains the whole set of visual blocks detailed in this document.</li>
+  <li><a href="https://chowlk.linkeddata.es/">Code Generation Service</a>: A web service to automatically generate the OWL code of your ontology if you follow this specification.</li>
 </ul>
 
 <p><a name="specification"></a></p>
@@ -177,6 +183,18 @@ Apache 2.0 License</p>
   <tr>
     <td class="first-column"><img src="images/datatype_rectangle.svg" alt="Datatype property block" /></td>
     <td>Standard way to represent datatype properties attached to a specific <code>owl:Class</code> element. Variations can apply to the type of outer line depending on the domain and range specification. For more details see section 2.11.</td>
+    <td><code>owl:DatatypeProperty</code></td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/object_property_diamond.svg" alt="Object property block" /></td>
+    <td>Alternative way to represent object properties. Mainly used to represent relations between the properties like <code>rdfs:subpropertyOf</code>.</td>
+    <td><code>owl:ObjectProperty</code></td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/datatype_property_diamond.svg" alt="Datatype property block" /></td>
+    <td>Alternative way to represent datatype properties. Mainly used to represent relations between the properties like <code>rdfs:subpropertyOf</code>.</td>
     <td><code>owl:DatatypeProperty</code></td>
   </tr>
 
@@ -250,9 +268,9 @@ Apache 2.0 License</p>
   </tr>
 </table>
 
-<p><a name="equivalent-disjoint-classes"></a></p>
+<p><a name="equivalent-classes"></a></p>
 
-<h3 id="223-equivalent-and-disjoint-classes">2.2.3 Equivalent and Disjoint Classes</h3>
+<h3 id="223-equivalent-classes">2.2.3 Equivalent Classes</h3>
 
 <table style="width:100%">
 
@@ -272,6 +290,19 @@ Apache 2.0 License</p>
     <td class="first-column"><img src="images/equivalent_2.svg" alt="Equivalence" /></td>
     <td>Option 2 for equivalent classes.</td>
   </tr>
+</table>
+
+<p><a name="disjoint-classes"></a></p>
+
+<h3 id="224-disjoint-classes">2.2.4 Disjoint Classes</h3>
+
+<table style="width:100%">
+
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
 
   <tr>
     <td class="first-column"><img src="images/disjoint_1.svg" alt="Disjointness" /></td>
@@ -285,9 +316,9 @@ Apache 2.0 License</p>
   </tr>
 </table>
 
-<p><a name="intersection-union-complement-classes"></a></p>
+<p><a name="intersection-classes"></a></p>
 
-<h3 id="224-intersection-union-and-complement-of-classes">2.2.4 Intersection, Union and Complement of Classes</h3>
+<h3 id="225-intersection-of-classes">2.2.5 Intersection of Classes</h3>
 
 <table style="width:100%">
 
@@ -307,6 +338,19 @@ Apache 2.0 License</p>
     <td class="first-column"><img src="images/intersection_2.svg" alt="Intersection" /></td>
     <td>Option 2 for intersection between classes.</td>
   </tr>
+</table>
+
+<p><a name="union-classes"></a></p>
+
+<h3 id="226-union-of-classes">2.2.6 Union of Classes</h3>
+
+<table style="width:100%">
+
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
 
   <tr>
     <td class="first-column"><img src="images/union_1.svg" alt="Union" /></td>
@@ -319,9 +363,23 @@ Apache 2.0 License</p>
     <td>Option 2 for union of two concepts.</td>
   </tr>
 
+</table>
+
+<p><a name="complement-classes"></a></p>
+
+<h3 id="227-complement-of-classes">2.2.7 Complement of Classes</h3>
+
+<table style="width:100%">
+
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+
   <tr>
     <td class="first-column"><img src="images/complement_of.svg" alt="Complement of" /></td>
-    <td>Option 1 for union of two concepts.</td>
+    <td>Option 1 for complement of two concepts.</td>
     <td><code>owl:complementOf ns:Class1</code></td>
   </tr>
 </table>
@@ -854,7 +912,7 @@ Apache 2.0 License</p>
 <p><a name="example"></a></p>
 <h2 id="3-example">3. Example</h2>
 
-<p>The following examples were constructed using the <a href="https://www.draw.io/">drawio</a> graphic environment, and the guidelines detailed in this specification. Aditionally, the OWL code for each case was generated using the <a href="https://chowlk.herokuapp.com/">Code Generation Service</a>.</p>
+<p>The following examples were constructed using the <a href="https://diagrams.net/">diagrams.net</a> graphic environment, and the guidelines detailed in this specification. Aditionally, the OWL code for each case was generated using the <a href="https://chowlk.linkeddata.es/">Code Generation Service</a>.</p>
 
 <h3 id="31-saref-for-building-ontology">3.1 SAREF for Building Ontology</h3>
 <p>The following figure depicts the <a href="https://ontoology.linkeddata.es/publish/saref4bldg/index-en.html#https://w3id.org/def/saref4bldg#PhysicalObject">SAREF4Building</a> Ontology. The <b>OWL code</b> is available in this <a href="resources/s4bldg.ttl">link</a>.</p>
@@ -869,15 +927,35 @@ Apache 2.0 License</p>
 <p><a name="service"></a></p>
 <h2 id="4-chowlk-code-generation-service">4. CHOWLK Code Generation Service</h2>
 
-<p>The above specification comes together with a web service that automatically transform your conceptualization into OWL code, that later can be read by any other ontology editor like <a href="https://protege.stanford.edu/">Protegé</a>. So the use of our specification is two fold, on the one hand it provides you with the resources to construct fine grained conceptualizations of your ontologies and also a way to automatically generate the OWL code of your model. The <a href="https://chowlk.herokuapp.com/">service</a> is a drag and drop application.<br /></p>
+<p>The above specification comes together with the <b><a href="https://chowlk.linkeddata.es/">Code Generation Service</a></b> that automatically transform your conceptualization into OWL code, that later can be read by any other ontology editor like <a href="https://protege.stanford.edu/">Protegé</a>. So the use of our specification is two fold, on the one hand it provides you with the resources to construct fine grained conceptualizations of your ontologies and also a way to automatically generate the OWL code of your model.</p>
 
 <p><b>IMPORTANT NOTE</b><br />
 In order to being able to use the service the following aspects of the model must be ensured:</p>
 <ul>
     <li>The ontological diagram always should include the namespace block, indicating all the prefixes and namespaces used in the ontology.</li>
     <li>The metadata block must contain the actual annotation property elements, aliases are not allowed. For instance, the user should type <code>owl:versionInfo</code> instead of <code>version</code> to indicate the current version of the ontology.</li>
-    <li>The user must ensure that the source and target of all the arrows in the model are connected to a block. This means that in order to represent relationships between properties the user should use the <a href="#relations-between-properties">Option 1</a> for these constructs.</li>
+    <li>The user must ensure that the source and target of all the arrows in the model are connected to a block. This means that in order to represent relationships between object or datatype properties the user should use the <a href="#relations-between-properties">Option 1</a> for these constructs.</li>
 </ul>
+
+<h3 id="41-adoption">4.1 Adoption</h3>
+
+<p>Our visual notation is being used to develop ontologies in the following projects and is part of the suite of tools of the <a href="https://lot.linkeddata.es/">Linked Open Terms</a> methodology.</p>
+
+<h4 id="411-bimerr">4.1.1 <a href="https://bimerr.iot.linkeddata.es/" target="_blank">BIMERR</a></h4>
+
+<p>BIMERR is a EU funded project which aims to provide a suite of interoperable tools to support AEC stakeholders throughout the energy efficiency renovation process of existing buildings.</p>
+
+<h4 id="412-delta">4.1.2 <a href="http://delta.iot.linkeddata.es/" target="_blank">DELTA</a></h4>
+
+<p>DELTA is an EU funded project under Horizon 2020. It proposes a demand-response management platform that introduces scalability and adaptiveness into the Aggregator’s DR toolkits.</p>
+
+<h4 id="413-vicinity">4.1.3 <a href="http://vicinity.iot.linkeddata.es/vicinity/" target="_blank">VICINITY</a></h4>
+
+<p>VICINITY is an EU funded project under Horizon 2020. It proposes a platform and ecosystem that provides “interoperability as a service” for infrastructures in the Internet of Things.</p>
+
+<h4 id="414-easytv">4.1.4 <a href="https://oeg-upm.github.io/easytv-onto/OnToology/ontology/core.ttl/documentation/index-en.html" target="_blank">EASYTV</a></h4>
+
+<p>EasyTV is a H2020 European project which main goal is to provide equal access to television and audio-visual services to that all users, especially persons with disabilities and users with special needs.</p>
 
 <p><a name="references"></a></p>
 <h2 id="5-references">5. References</h2>

@@ -7,11 +7,14 @@
 **License:**<br>
 Apache 2.0 License
 
+**Cite as:**<br>
+Chowlk Visual Notation, Version 0.0.1.
+
 {% include abstract.md %}
 
 ## Getting Started
 
-The following video shows you how to start conceptualizing your ontology using drawio and this notation.
+The following video shows you how to start conceptualizing your ontology using <a href="https://diagrams.net/">diagrams.net</a> and this notation.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aTAvtkPCdMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -23,8 +26,11 @@ The following video shows you how to start conceptualizing your ontology using d
     2. [Classes](#classes)
         1. [Class Definition](#class-definition)
         2. [Sub-Class](#sub-class)
-        3. [Equivalent and Disjoint Classes](#equivalent-disjoint-classes)
-        4. [Intersection, Union and Complement of Classes](#intersection-union-complement-classes)
+        3. [Equivalent Classes](#equivalent-classes)
+        4. [Disjoint Classes](#disjoint-classes)
+        5. [Intersection of Classes](#intersection-classes)
+        6. [Union of Classes](#union-classes)
+        7. [Complement of Classes](#complement-classes)
     3. [Object Properties](#object-properties)
         1. [Domain and Range](#domain-and-range-for-object-properties)
         2. [Universal Restrictions](#universal-restrictions-for-object-properties)

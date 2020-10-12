@@ -50,6 +50,18 @@ This sections gives detailed information about the diagraming blocks used to rep
   </tr>
 
   <tr>
+    <td class="first-column"><img src="images/object_property_diamond.svg" alt="Object property block"></td>
+    <td>Alternative way to represent object properties. Mainly used to represent relations between the properties like <code>rdfs:subpropertyOf</code>.</td>
+    <td><code>owl:ObjectProperty</code></td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/datatype_property_diamond.svg" alt="Datatype property block"></td>
+    <td>Alternative way to represent datatype properties. Mainly used to represent relations between the properties like <code>rdfs:subpropertyOf</code>.</td>
+    <td><code>owl:DatatypeProperty</code></td>
+  </tr>
+
+  <tr>
     <td class="first-column"><img src="images/namespaces.svg" alt="Namespaces block"></td>
     <td>Block to indicate all the namespaces used in the ontology. The first namespace is the URI used for the current ontology. It is obligatory to include all the namespaces being used in order to use the ontology converter service.</td>
     <td><code>@prefix base: &lt;http://namespace.com#&gt;</code></td>
@@ -119,9 +131,9 @@ This sections gives detailed information about the diagraming blocks used to rep
   </tr>
 </table>
 
-<a name="equivalent-disjoint-classes"></a>
+<a name="equivalent-classes"></a>
 
-### 2.2.3 Equivalent and Disjoint Classes
+### 2.2.3 Equivalent Classes
 
 <table style="width:100%">
 
@@ -141,6 +153,19 @@ This sections gives detailed information about the diagraming blocks used to rep
     <td class="first-column"><img src="images/equivalent_2.svg" alt="Equivalence"></td>
     <td>Option 2 for equivalent classes.</td>
   </tr>
+</table>
+
+<a name="disjoint-classes"></a>
+
+### 2.2.4 Disjoint Classes
+
+<table style="width:100%">
+
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
 
   <tr>
     <td class="first-column"><img src="images/disjoint_1.svg" alt="Disjointness"></td>
@@ -154,9 +179,10 @@ This sections gives detailed information about the diagraming blocks used to rep
   </tr>
 </table>
 
-<a name="intersection-union-complement-classes"></a>
 
-### 2.2.4 Intersection, Union and Complement of Classes
+<a name="intersection-classes"></a>
+
+### 2.2.5 Intersection of Classes
 
 <table style="width:100%">
 
@@ -176,6 +202,20 @@ This sections gives detailed information about the diagraming blocks used to rep
     <td class="first-column"><img src="images/intersection_2.svg" alt="Intersection"></td>
     <td>Option 2 for intersection between classes.</td>
   </tr>
+</table>
+
+
+<a name="union-classes"></a>
+
+### 2.2.6 Union of Classes
+
+<table style="width:100%">
+
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
 
   <tr>
     <td class="first-column"><img src="images/union_1.svg" alt="Union"></td>
@@ -188,9 +228,24 @@ This sections gives detailed information about the diagraming blocks used to rep
     <td>Option 2 for union of two concepts.</td>
   </tr>
 
+</table>
+
+
+<a name="complement-classes"></a>
+
+### 2.2.7 Complement of Classes
+
+<table style="width:100%">
+
+  <tr>
+    <th style="width:35%">Diagram BLOCK</th>
+    <th style="width:25%">Description</th>
+    <th style="width:40%">OWL Element</th>
+  </tr>
+
   <tr>
     <td class="first-column"><img src="images/complement_of.svg" alt="Complement of"></td>
-    <td>Option 1 for union of two concepts.</td>
+    <td>Option 1 for complement of two concepts.</td>
     <td><code>owl:complementOf ns:Class1</code></td>
   </tr>
 </table>
