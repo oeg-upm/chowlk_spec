@@ -41,7 +41,7 @@ The following video shows you how to start conceptualizing your ontology using <
         7. [Symmetric Properties](#symmetric-object-properties)
         8. [Transitive Properties](#transitive-object-properties)
     4. [Datatype Properties](#datatype-properties)
-        1. [Domain and Range](#domain-and-range-for-object-properties)
+        1. [Domain and Range](#domain-and-range-for-datatype-properties)
         2. [Universal Restrictions](#universal-restrictions-for-datatype-properties)
         3. [Existential Restrictions](#existential-restrictions-for-datatype-properties)
         4. [Cardinality Restrictions](#cardinality-restrictions-for-datatype-properties)
@@ -55,8 +55,9 @@ The following video shows you how to start conceptualizing your ontology using <
         2. [Property Values](#individuals-property-values)
 3. [Example](#example)
 4. [Code Generation Service](#service)
-5. [References](#references)
-6. [Acknowledgment](#acknowledgment)
+5. [Adoption](#adoption)
+6. [References](#references)
+7. [Acknowledgment](#acknowledgment)
 
 <a name="introduction"></a>
 {% include introduction.md %}
@@ -69,6 +70,9 @@ The following video shows you how to start conceptualizing your ontology using <
 
 <a name="service"></a>
 {% include service.md %}
+
+<a name="adoption"></a>
+{% include adoption.md %}
 
 <a name="references"></a>
 {% include references.md %}

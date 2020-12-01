@@ -5,10 +5,24 @@
     
     <meta charset="UTF-8">
 
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Chowlk Visual Notation | Chowlk Specification</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="Chowlk Visual Notation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="First Draft 04/06/2020" />
+<meta property="og:description" content="First Draft 04/06/2020" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Chowlk Specification" />
+<script type="application/ld+json">
+{"@type":"WebSite","headline":"Chowlk Visual Notation","url":"http://localhost:4000/","name":"Chowlk Specification","description":"First Draft 04/06/2020","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css?v=9371b12390b2ec43c94671bb3f7779926aaa1e23">
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -81,7 +95,7 @@ Chowlk Visual Notation, Version 0.0.1.</p>
       </li>
       <li><a href="#datatype-properties">Datatype Properties</a>
         <ol>
-          <li><a href="#domain-and-range-for-object-properties">Domain and Range</a></li>
+          <li><a href="#domain-and-range-for-datatype-properties">Domain and Range</a></li>
           <li><a href="#universal-restrictions-for-datatype-properties">Universal Restrictions</a></li>
           <li><a href="#existential-restrictions-for-datatype-properties">Existential Restrictions</a></li>
           <li><a href="#cardinality-restrictions-for-datatype-properties">Cardinality Restrictions</a></li>
@@ -105,6 +119,7 @@ Chowlk Visual Notation, Version 0.0.1.</p>
   </li>
   <li><a href="#example">Example</a></li>
   <li><a href="#service">Code Generation Service</a></li>
+  <li><a href="#adoption">Adoption</a></li>
   <li><a href="#references">References</a></li>
   <li><a href="#acknowledgment">Acknowledgment</a></li>
 </ol>
@@ -936,33 +951,38 @@ In order to being able to use the service the following aspects of the model mus
     <li>The user must ensure that the source and target of all the arrows in the model are connected to a block. This means that in order to represent relationships between object or datatype properties the user should use the <a href="#relations-between-properties">Option 1</a> for these constructs.</li>
 </ul>
 
-<h3 id="41-adoption">4.1 Adoption</h3>
+<p><a name="adoption"></a></p>
+<h2 id="5-adoption">5 Adoption</h2>
 
 <p>Our visual notation is being used to develop ontologies in the following projects and is part of the suite of tools of the <a href="https://lot.linkeddata.es/">Linked Open Terms</a> methodology.</p>
 
-<h4 id="411-bimerr">4.1.1 <a href="https://bimerr.iot.linkeddata.es/" target="_blank">BIMERR</a></h4>
+<h3 id="51-bimerr">5.1 <a href="https://bimerr.iot.linkeddata.es/" target="_blank">BIMERR</a></h3>
 
 <p>BIMERR is a EU funded project which aims to provide a suite of interoperable tools to support AEC stakeholders throughout the energy efficiency renovation process of existing buildings.</p>
 
-<h4 id="412-delta">4.1.2 <a href="http://delta.iot.linkeddata.es/" target="_blank">DELTA</a></h4>
+<h3 id="52-saref">5.2 <a href="https://saref.etsi.org/core/v3.1.1/" target="_blank">SAREF</a></h3>
+
+<p>The Smart Applications REFerence (SAREF) ontology is a shared model of consensus that facilitates the matching of existing assets in the smart applications domain. The following modules / extensions of the SAREF ontology were constructed using our notation: SAREF Core, SAREF4Building, SAREF4Envi, SAREF4City, SAREF4Agri, SAREF4Wear, SAREF4Water</p>
+
+<h3 id="53-delta">5.3 <a href="http://delta.iot.linkeddata.es/" target="_blank">DELTA</a></h3>
 
 <p>DELTA is an EU funded project under Horizon 2020. It proposes a demand-response management platform that introduces scalability and adaptiveness into the Aggregator’s DR toolkits.</p>
 
-<h4 id="413-vicinity">4.1.3 <a href="http://vicinity.iot.linkeddata.es/vicinity/" target="_blank">VICINITY</a></h4>
+<h3 id="54-vicinity">5.4 <a href="http://vicinity.iot.linkeddata.es/vicinity/" target="_blank">VICINITY</a></h3>
 
 <p>VICINITY is an EU funded project under Horizon 2020. It proposes a platform and ecosystem that provides “interoperability as a service” for infrastructures in the Internet of Things.</p>
 
-<h4 id="414-easytv">4.1.4 <a href="https://oeg-upm.github.io/easytv-onto/OnToology/ontology/core.ttl/documentation/index-en.html" target="_blank">EASYTV</a></h4>
+<h3 id="55-easytv">5.5 <a href="https://oeg-upm.github.io/easytv-onto/OnToology/ontology/core.ttl/documentation/index-en.html" target="_blank">EASYTV</a></h3>
 
 <p>EasyTV is a H2020 European project which main goal is to provide equal access to television and audio-visual services to that all users, especially persons with disabilities and users with special needs.</p>
 
 <p><a name="references"></a></p>
-<h2 id="5-references">5. References</h2>
+<h2 id="6-references">6. References</h2>
 
 <p>The Chowlk specification is an evolution of the diagraming guidelines provided at “Garijo, Daniel, and María Poveda-Villalón. <a href="https://arxiv.org/abs/2003.13084">“Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web.” arXiv preprint arXiv:2003.13084 (2020)”</a>  which are based on the UML_Ont profile define in the NeOn project.</p>
 
 <p><a name="acknowledgment"></a></p>
-<h2 id="6-acknowledgment">6. Acknowledgment</h2>
+<h2 id="7-acknowledgment">7. Acknowledgment</h2>
 
 
       <footer class="site-footer">
