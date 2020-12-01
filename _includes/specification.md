@@ -553,6 +553,14 @@ This sections gives detailed information about the diagraming blocks used to rep
     <td><code>ns:datatypeProperty rdf:type owl:DatatypeProperty ;<br></code>
     <code>rdfs:range datatype .<br></code></td>
   </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/yes_domain_yes_range_dp_2.svg" alt="Domain and Range DP"></td>
+    <td>Datatype property <code>ns:datatypeProperty</code> with domain and with range.</td>
+    <td><code>ns:datatypeProperty rdf:type owl:DatatypeProperty ;<br></code>
+    <code>rdfs:domain ns:Class .<br></code>
+    <code>rdfs:range datatype .<br></code></td>
+  </tr>
 </table>
 
 ### 2.4.2 Universal Restrictions
@@ -746,12 +754,17 @@ The following section applies to both type of properties: <code>owl:ObjectProper
   <tr>
     <td class="first-column"><img src="images/individual_class_1.svg" alt="Individual"></td>
     <td>Option 1 for Individual type definition.</td>
-    <td rowspan="2"><code>ns:Individual rdf:type ns:Class .</code></td>
+    <td rowspan="3"><code>ns:Individual rdf:type ns:Class .</code></td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/individual_class_2.svg" alt="Individual"></td>
     <td>Option 2 for Individual type definition.</td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/individual_class_3.svg" alt="Individual"></td>
+    <td>Option 3 for Individual type definition.</td>
   </tr>
 </table>
 
