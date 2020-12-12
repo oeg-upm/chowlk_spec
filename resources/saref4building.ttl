@@ -12,8 +12,8 @@
 @base <https://w3id.org/def/saref4bldg#> .
 
 <https://w3id.org/def/saref4bldg#> rdf:type owl:Ontology ;
-			dc:creator "Raúl García-Castro" ;
-			dc:creator "María Poveda-Villalón" ;
+			dc:creator "RaÃºl GarcÃ­a-Castro" ;
+			dc:creator "MarÃ­a Poveda-VillalÃ³n" ;
 			owl:versionInfo "1.0" ;
 			dc:title "SAREF extension for building devices" .
 
@@ -299,6 +299,10 @@ saref:Measurement rdf:type owl:Class ;
 		[ rdf:type owl:Restriction ;
 		  owl:onProperty saref:hasValue ;
 		  owl:minCardinality "1"^^xsd:nonNegativeInteger ]
+ ,
+		[ rdf:type owl:Restriction ;
+		  owl:onProperty saref:hasValue ;
+		  owl:maxCardinality "1"^^xsd:nonNegativeInteger ]
  ,
 		[ rdf:type owl:Restriction ;
 		  owl:onProperty saref:isMeasuredIn ;
