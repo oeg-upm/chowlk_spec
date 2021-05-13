@@ -153,37 +153,37 @@ Chowlk Visual Notation, Version 0.0.1.</p>
 
   <tr>
     <td class="first-column"><img src="images/class.svg" alt="Class block" /></td>
-    <td>Block to represent named and unnamed classes, as well as individual elements within the ontology conceptualization. The content of the block should be accompanied with the prefix and the name of the concept on order to fully identify it.</td>
+    <td>Block to represent named and unnamed classes within the ontology conceptualization. The content of the block should be accompanied with the prefix and the name of the concept in order to fully identify it.</td>
     <td><code>owl:Class</code><br /></td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/individual.svg" alt="Class block" /></td>
-    <td>Block to represent named and unnamed classes, as well as individual elements within the ontology conceptualization. The content of the block should be accompanied with the prefix and the name of the concept on order to fully identify it.</td>
+    <td>Block to represent individual or instances within the ontology conceptualization. The content of the block should be accompanied with the prefix and the name, both underlined, in order to fully identify it.</td>
     <td><code>owl:Individual</code></td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/object_property_arrow.svg" alt="Object property block" /></td>
-    <td>Standard way to represent object properties. Variations can apply to the type of line or the connections style depending on the range or domain specification. For more details see section 2.10.</td>
+    <td>Preferred way to represent object properties. Variations can apply to the type of line or the connections style depending on the range or domain specification. For more details see section 2.10.</td>
     <td><code>owl:ObjectProperty</code></td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/subclass_arrow.svg" alt="Sub-class relationship block" /></td>
-    <td>Special arrow to indicate sub-class relationship between two classes.</td>
+    <td>Preferred arrow to indicate sub-class relationship between two classes.</td>
     <td><code>owl:subClassOf</code></td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/type_arrow.svg" alt="Type relationship block" /></td>
-    <td>Special arrow to represent several relationships between elements of this specification. It can be used to indicate <code>rdf:type</code> relationships, or to connect a <code>owl:unionOf</code> axiom with all the concepts it is composed of.</td>
+    <td>Special arrow to represent several relationships between elements of this specification. It is used in combination with OWL construct stereotypes. It can be used to indicate <code>rdf:type</code> relationships, or to connect a <code>owl:unionOf</code> axiom with all the concepts it is composed of.</td>
     <td><code>rdf:type</code></td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/datatype_rectangle.svg" alt="Datatype property block" /></td>
-    <td>Standard way to represent datatype properties attached to a specific <code>owl:Class</code> element. Variations can apply to the type of outer line depending on the domain and range specification. For more details see section 2.11.</td>
+    <td>Preferred way to represent datatype properties attached to a specific <code>owl:Class</code> element. Variations can apply to the type of outer line depending on the domain and range specification. For more details see section 2.11.</td>
     <td><code>owl:DatatypeProperty</code></td>
   </tr>
 
@@ -391,7 +391,7 @@ Chowlk Visual Notation, Version 0.0.1.</p>
 
 <p><a name="domain-and-range-for-object-properties"></a></p>
 
-<h3 id="231-domain-and-range">2.3.1 Domain and Range</h3>
+<h3 id="231-domain-and-range">2.3.1 Domain and Range (for object properties)</h3>
 
 <table style="width:100%">
 
@@ -453,7 +453,7 @@ Chowlk Visual Notation, Version 0.0.1.</p>
 
 <p><a name="universal-restrictions-for-object-properties"></a></p>
 
-<h3 id="232-universal-restrictions">2.3.2 Universal Restrictions</h3>
+<h3 id="232-universal-restrictions">2.3.2 Universal Restrictions (for object properties)</h3>
 
 <table style="width:100%">
   <tr>
@@ -484,7 +484,7 @@ Chowlk Visual Notation, Version 0.0.1.</p>
 
 <p><a name="existential-restrictions-for-object-properties"></a></p>
 
-<h3 id="233-existential-restrictions">2.3.3 Existential Restrictions</h3>
+<h3 id="233-existential-restrictions">2.3.3 Existential Restrictions (for object properties)</h3>
 
 <table style="width:100%">
   <tr>
@@ -515,7 +515,7 @@ Chowlk Visual Notation, Version 0.0.1.</p>
 
 <p><a name="cardinality-restrictions-for-object-properties"></a></p>
 
-<h3 id="234-cardinality-restrictions">2.3.4 Cardinality Restrictions</h3>
+<h3 id="234-cardinality-restrictions">2.3.4 Cardinality Restrictions (for object properties)</h3>
 
 <table style="width:100%">
   <tr>
@@ -543,7 +543,7 @@ Chowlk Visual Notation, Version 0.0.1.</p>
 
 <p><a name="functional-object-properties"></a></p>
 
-<h3 id="235-functional-properties">2.3.5 Functional Properties</h3>
+<h3 id="235-functional-properties">2.3.5 Functional Properties (for object properties)</h3>
 
 <table style="width:100%">
   <tr>
@@ -649,7 +649,7 @@ Chowlk Visual Notation, Version 0.0.1.</p>
 
 <p><a name="domain-and-range-for-datatype-properties"></a></p>
 
-<h3 id="241-domain-and-range">2.4.1 Domain and Range</h3>
+<h3 id="241-domain-and-range">2.4.1 Domain and Range (for datatype properties)</h3>
 
 <table style="width:100%">
 
@@ -696,7 +696,7 @@ Chowlk Visual Notation, Version 0.0.1.</p>
   </tr>
 </table>
 
-<h3 id="242-universal-restrictions">2.4.2 Universal Restrictions</h3>
+<h3 id="242-universal-restrictions">2.4.2 Universal Restrictions (for datatype properties)</h3>
 
 <table style="width:100%">
   <tr>
@@ -721,7 +721,7 @@ Chowlk Visual Notation, Version 0.0.1.</p>
 
 <p><a name="existential-restrictions-for-datatype-properties"></a></p>
 
-<h3 id="243-existential-restrictions">2.4.3 Existential Restrictions</h3>
+<h3 id="243-existential-restrictions">2.4.3 Existential Restrictions (for datatype properties)</h3>
 
 <table style="width:100%">
   <tr>
@@ -746,7 +746,7 @@ Chowlk Visual Notation, Version 0.0.1.</p>
 
 <p><a name="cardinality-restrictions-for-datatype-properties"></a></p>
 
-<h3 id="244-cardinality-restrictions">2.4.4 Cardinality Restrictions</h3>
+<h3 id="244-cardinality-restrictions">2.4.4 Cardinality Restrictions (for datatype properties)</h3>
 
 <table style="width:100%">
   <tr>
@@ -772,7 +772,7 @@ Chowlk Visual Notation, Version 0.0.1.</p>
 
 <p><a name="functional-datatype-properties"></a></p>
 
-<h3 id="245-functional-properties">2.4.5 Functional Properties</h3>
+<h3 id="245-functional-properties">2.4.5 Functional Properties (for datatype properties)</h3>
 
 <table style="width:100%">
   <tr>
