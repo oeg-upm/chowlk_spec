@@ -9,7 +9,7 @@ Serge Chávez-Feria
 Repository for the Chowlk project, which provides an specification to create Ontology diagrams in <a href="https://www.draw.io/">drawio</a>, and a service to generate the OWL code automatically from the diagram.
 
 <b>Specification:</b><br>
-https://chowlk.linkeddata.es/chowlk_spec
+https://oeg-upm.github.io/chowlk_spec/
 
 <b>Drawio library with the diagram blocks:</b><br>
 https://github.com/oeg-upm/chowlk_spec/blob/master/chowlk-drawio-library.xml
