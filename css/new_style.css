@@ -33,11 +33,16 @@
     width: 30%;
 }
 
+.video{
+    height: 100%;
+}
+
 .drop-area{
     border-radius: 5px;
     border-style: dashed;
-    min-height: 313px;
+    height: 313px;
     position: relative;
+    overflow: scroll;
 }
 
 .drag-text{
@@ -52,7 +57,7 @@
 .drag-button{
     background-color:#155799;
     color: white;
-    width: 100%;
+    width: 49%;
 }
 
 #toc{
@@ -81,4 +86,10 @@
 
 .row-height{
     height: 100px;
+}
+
+#response{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
 }

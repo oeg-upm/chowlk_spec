@@ -76,22 +76,157 @@
     <section class="content pt-5 px-5">
         <div class="container">
             <div class="row pb-5">
-                <div class="col-6 pt-2">
+                <div class="col-lg-6 pt-2">
                     <h4>How to use it</h4>
                     <video src="resources/getting_started.mp4" class="w-100"></video>
                 </div>
-                <div class="col-6 pt-2">
+                <div class="col-lg-6 pt-2">
                     <h4>Service</h4>
                     <div class="drop-area" id="drag-drop-area">
                         <p class="lead text-dark drag-text" id="drag-text">Drag and drop your diagram or click to choose your file.</p>
+                        <div id="response" style="display: none;"></div>
                         <input type="file" id="fileElem" style="display: none;">
                     </div>
-                    <button class="btn mt-2 drag-button" id="submit">Submit</button>
+                    <div class="d-flex justify-content-between">
+                        <button class="btn mt-2 drag-button" id="submit">Submit</button>
+                        <button class="btn mt-2 drag-button" id="download">Download</button>
+                    </div>
+
 
                 </div>
             </div>
         </div>
         
+    </section>
+
+    <!--Error Report-->
+
+    <section id="error-report" class="pt-3 px-5" style="display: none;">
+        <div class="container">
+            <h4>Error Reporting</h4>
+
+            <!--Namespaces-->
+            <div id="new-namespaces" style="display: none;">
+                <p>The following namespaces were found in the ontology but not in the namespace declaration block. We created new namespaces
+                    that are listed bellow, please check them:
+                </p>
+            </div>
+            
+
+            <!--Errors-->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item" id="concepts-item" style="display: none;">
+                    <h2 class="accordion-header" id="heading01">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#concepts">
+                            Concepts
+                        </button>
+                    </h2>
+                    <div id="concepts" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="concepts-body">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="attributes-item" style="display: none;">
+                    <h2 class="accordion-header" id="heading02">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#attributes">
+                            Attributes
+                        </button>
+                    </h2>
+                    <div id="attributes" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="attributes-body">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="arrows-item" style="display: none;">
+                    <h2 class="accordion-header" id="heading03">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#arrows">
+                            Arrows
+                        </button>
+                    </h2>
+                    <div id="arrows" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="arrows-body">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="ellipses-item" style="display: none;">
+                    <h2 class="accordion-header" id="heading04">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ellipses">
+                            Ellipses
+                        </button>
+                    </h2>
+                    <div id="ellipses" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="ellipses-body">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="namespaces-item" style="display: none;">
+                    <h2 class="accordion-header" id="heading05">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#namespaces">
+                            Namespaces
+                        </button>
+                    </h2>
+                    <div id="namespaces" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="namespaces-body">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="metadata-item" style="display: none;">
+                    <h2 class="accordion-header" id="heading06">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#metadata">
+                            Metadata
+                        </button>
+                    </h2>
+                    <div id="metadata" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="metadata-body">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="rhombuses-item" style="display: none;">
+                    <h2 class="accordion-header" id="heading07">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#rhombuses">
+                            Rhombuses
+                        </button>
+                    </h2>
+                    <div id="rhombuses" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="rhombuses-body">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="individual-item" style="display: none;">
+                    <h2 class="accordion-header" id="heading08">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#individual">
+                            Individuals
+                        </button>
+                    </h2>
+                    <div id="individual" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="individual-body">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" id="syntax-item" style="display: none;">
+                    <h2 class="accordion-header" id="heading08">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#syntax">
+                            Syntax
+                        </button>
+                    </h2>
+                    <div id="syntax" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="syntax-body">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </div>
     </section>
 
     <!--Footer-->
