@@ -350,6 +350,32 @@
 
                     </table>
 
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Examples of usage</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <img src="images/examples/subclass_example_1.svg" alt="subclass">
+                                </td>
+                                <td><code>ns:Worker owl:subClassOf ns:Person</code></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <img src="images/examples/subclass_example_2.svg" alt="subclass">
+                                </td>
+                                <td><code>ns:Space owl:subClassOf ns:Zone</code></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
                     <h5 id="equivalent-classes" class="pt-3">2.2.3. Equivalent Classes</h5>
 
                     <p>Graphical representations to indicate that <code>ns:Class2</code> concept is equivalent to <code>ns:Class1</code></p>
@@ -377,6 +403,32 @@
                                     <p class="alt-tag">Alternative</p>
                                     <img src="images/equivalent_2.svg" alt="equivalent">
                                 </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Examples of usage</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <img src="images/examples/equivalent_example_1.svg" alt="equivalent">
+                                </td>
+                                <td><code>s4bldg:BuildingElement owl:equivalentClass bot:Element</code></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <img src="images/examples/equivalent_example_2.svg" alt="equivalent">
+                                </td>
+                                <td><code>s4bldg:BuildingElement owl:equivalentClass bot:Element</code></td>
                             </tr>
                         </tbody>
 
@@ -413,6 +465,32 @@
 
                     </table>
 
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Examples of usage</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <img src="images/examples/disjoint_example_1.svg" alt="disjoint">
+                                </td>
+                                <td><code>building:Wall owl:disjointWith building:Door</code></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <img src="images/examples/disjoint_example_2.svg" alt="disjoint">
+                                </td>
+                                <td><code>building:Wall owl:disjointWith building:Door</code></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
                     <h5 id="intersection-of-classes" class="pt-3">2.2.5. Intersection of Classes</h5>
 
                     <table class="table table-bordered align-middle">
@@ -437,6 +515,32 @@
                                     <p class="alt-tag">Alternative</p>
                                     <img src="images/intersection_2.svg" alt="intersection">
                                 </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Examples of usage</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center" scope="row">
+                                    <img src="images/examples/intersection_example_1.svg" alt="intersection">
+                                </td>
+                                <td><code>ns:CTO owl:subClassOf [owl:intersectionOf (ns:Class1 ns:Class2)]</code></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center" scope="row">
+                                    <img src="images/examples/intersection_example_2.svg" alt="intersection">
+                                </td>
+                                <td><code>ns:CTO owl:subClassOf [owl:intersectionOf (ns:Class1 ns:Class2)]</code></td>
                             </tr>
                         </tbody>
 
@@ -484,12 +588,14 @@
 
                         <tbody>
                             <tr>
-                                <td class="text-center row-height" scope="row"><img src="images/complement_of.svg" alt="complement"></td>
+                                <td class="text-center row-height" scope="row"><img src="images/complement_of_1.svg" alt="complement"></td>
+                                <td><code>ns:Class1 owl:complementOf ns:Class2</code></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center row-height" scope="row"><img src="images/complement_of_2.svg" alt="complement"></td>
                                 <td><code>owl:complementOf ns:Class1</code></td>
                             </tr>
-
                         </tbody>
-
                     </table>
 
                     <h5 id="object-properties" class="pt-3">2.3. Object Properties</h5>
@@ -1213,7 +1319,7 @@
                                     <p class="main-tag">Preferred</p>
                                     <img src="images/individual_class_1.svg" alt="">
                                 </td>
-                                <td rowspan="3"><code>ns:Individual rdf:type ns:Class .</code></td>
+                                <td rowspan="4"><code>ns:Individual rdf:type ns:Class .</code></td>
                             </tr>
                             <tr>
                                 <td class="text-center row-height" scope="row">
@@ -1225,6 +1331,12 @@
                                 <td class="text-center row-height" scope="row">
                                     <p class="alt-tag">Alternative</p>
                                     <img src="images/individual_class_3.svg" alt="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <p class="alt-tag">Alternative</p>
+                                    <img src="images/individual_class_4.svg" alt="">
                                 </td>
                             </tr>
                             
