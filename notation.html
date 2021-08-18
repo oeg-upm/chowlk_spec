@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/new_style.css">
 
-    <title>Chowlk | Home</title>
+    <title>Chowlk | Notation</title>
 
 </head>
 <body>
@@ -18,49 +18,80 @@
         
         <div id="toc" class="col-3 pt-4 d-none d-xl-block bg-light px-5">
             <div class="container">
-                <h4 class="text-secondary pb-4">Table of Contents</h4>
+                <h4 class="text-secondary pb-2">Table of Contents</h4>
 
-                <p><a href="#introduction">1. Introduction</a></p>
-                <p><a href="#specification">2. Specification</a></p>
-                <p class="ps-2"><a href="#basic-elements">2.1. Basic Elements</a></p>
-                <p class="ps-2"><a href="#classes">2.2. Classes</a></p>
-                <p class="ps-4"><a href="#class-definition">2.2.1. Class Definition</a></p>
-                <p class="ps-4"><a href="#sub-class">2.2.2. Sub-Class</a></p>
-                <p class="ps-4"><a href="#equivalent-classes">2.2.3. Equivalent Classes</a></p>
-                <p class="ps-4"><a href="#disjoint-classes">2.2.4. Disjoint Classes</a></p>
-                <p class="ps-4"><a href="#intersection-of-classes">2.2.5. Intersection of Classes</a></p>
-                <p class="ps-4"><a href="#union-of-classes">2.2.6. Union of Classes</a></p>
-                <p class="ps-4"><a href="#complement-of-classes">2.2.7. Complement of Classes</a></p>
-                <p class="ps-2"><a href="#object-properties">2.3. Object Properties</a></p>
-                <p class="ps-4"><a href="#object-properties-domain-and-range">2.3.1. Domain and Range</a></p>
-                <p class="ps-4"><a href="#object-properties-universal-restrictions">2.3.2. Universal Restrictions</a></p>
-                <p class="ps-4"><a href="#object-properties-existential-restrictions">2.3.3. Existential Restrictions</a></p>
-                <p class="ps-4"><a href="#object-properties-cardinality-restrictions">2.3.4. Cardinality Restrictions</a></p>
-                <p class="ps-4"><a href="#object-properties-functional-properties">2.3.5. Functional Properties</a></p>
-                <p class="ps-4"><a href="#object-properties-inverse-functional-properties">2.3.6. Inverse Functional Properties</a></p>
-                <p class="ps-4"><a href="#object-properties-symmetric-properties">2.3.7. Symmetric Properties</a></p>
-                <p class="ps-4"><a href="#object-properties-transitive-properties">2.3.8. Transitive Properties</a></p>
-                <p class="ps-2"><a href="#datatype-properties">2.4. Datatype Properties</a></p>
-                <p class="ps-4"><a href="#datatype-properties-domain-and-range">2.4.1. Domain and Range</a></p>
-                <p class="ps-4"><a href="#datatype-properties-universal-restrictions">2.4.2. Universal Restrictions</a></p>
-                <p class="ps-4"><a href="#datatype-properties-existential-restrictions">2.4.3. Existential Restrictions</a></p>
-                <p class="ps-4"><a href="#datatype-properties-cardinality-restrictions">2.4.4. Cardinality Restrictions</a></p>
-                <p class="ps-4"><a href="#datatype-properties-functional-properties">2.4.5. Functional Properties</a></p>
-                <p class="ps-2"><a href="#relations-between-properties-object-property">2.5. Relations between Object Properties</a></p>
-                <p class="ps-4"><a href="#sub-property-object-property">2.5.1. Sub-property</a></p>
-                <p class="ps-4"><a href="#equivalent-property-object-property">2.5.2. Equivalent property</a></p>
-                <p class="ps-4"><a href="#inverse-property-object-property">2.5.3. Inverse property</a></p>
-                <p class="ps-2"><a href="#relations-between-properties-datatype-properties">2.6. Relations between Datatype Properties</a></p>
-                <p class="ps-4"><a href="#sub-property-datatype-property">2.6.1. Sub-property</a></p>
-                <p class="ps-4"><a href="#equivalent-property-datatype-property">2.6.2. Equivalent property</a></p>
-                <p class="ps-2"><a href="#individuals">2.7. Individuals</a></p>
-                <p class="ps-4"><a href="#class-membership">2.7.1. Class Membership</a></p>
-                <p class="ps-4"><a href="#property-values">2.7.2. Property Values</a></p>
-                <p class="ps-4"><a href="#individual-identity">2.7.3. Individual Identity</a></p>
-                <p class="ps-4"><a href="#same-as">2.7.3.1. Same as</a></p>
-                <p class="ps-4"><a href="#different-from">2.7.3.2. Different From</a></p>
-                <p class="ps-4"><a href="#all-different">2.7.3.3. All Different</a></p>
+                <div class="options text-secondary row mb-3 pb-1">
+                    <div id="btn-ontologists" class="selected col-5 btn-option">
+                        Ontologists
+                    </div>
+                    <div id="btn-domain-experts" class="col-5 btn-option">
+                        Domain Experts
+                    </div>
+                </div>
 
+                
+                <div id="toc-ontologists">
+                    <p><a href="#introduction">1. Introduction</a></p>
+                    <p><a href="#specification-ontologists">2. Specification</a></p>
+                    <p class="ps-2"><a href="#basic-elements">2.1. Basic Elements</a></p>
+                    <p class="ps-2"><a href="#classes">2.2. Classes</a></p>
+                    <p class="ps-4"><a href="#class-definition">2.2.1. Class Definition</a></p>
+                    <p class="ps-4"><a href="#sub-class">2.2.2. Sub-Class</a></p>
+                    <p class="ps-4"><a href="#equivalent-classes">2.2.3. Equivalent Classes</a></p>
+                    <p class="ps-4"><a href="#disjoint-classes">2.2.4. Disjoint Classes</a></p>
+                    <p class="ps-4"><a href="#intersection-of-classes">2.2.5. Intersection of Classes</a></p>
+                    <p class="ps-4"><a href="#union-of-classes">2.2.6. Union of Classes</a></p>
+                    <p class="ps-4"><a href="#complement-of-classes">2.2.7. Complement of Classes</a></p>
+                    <p class="ps-2"><a href="#object-properties">2.3. Object Properties</a></p>
+                    <p class="ps-4"><a href="#object-properties-domain-and-range">2.3.1. Domain and Range</a></p>
+                    <p class="ps-4"><a href="#object-properties-universal-restrictions">2.3.2. Universal Restrictions</a></p>
+                    <p class="ps-4"><a href="#object-properties-existential-restrictions">2.3.3. Existential Restrictions</a></p>
+                    <p class="ps-4"><a href="#object-properties-cardinality-restrictions">2.3.4. Cardinality Restrictions</a></p>
+                    <p class="ps-4"><a href="#object-properties-functional-properties">2.3.5. Functional Properties</a></p>
+                    <p class="ps-4"><a href="#object-properties-inverse-functional-properties">2.3.6. Inverse Functional Properties</a></p>
+                    <p class="ps-4"><a href="#object-properties-symmetric-properties">2.3.7. Symmetric Properties</a></p>
+                    <p class="ps-4"><a href="#object-properties-transitive-properties">2.3.8. Transitive Properties</a></p>
+                    <p class="ps-2"><a href="#datatype-properties">2.4. Datatype Properties</a></p>
+                    <p class="ps-4"><a href="#datatype-properties-domain-and-range">2.4.1. Domain and Range</a></p>
+                    <p class="ps-4"><a href="#datatype-properties-universal-restrictions">2.4.2. Universal Restrictions</a></p>
+                    <p class="ps-4"><a href="#datatype-properties-existential-restrictions">2.4.3. Existential Restrictions</a></p>
+                    <p class="ps-4"><a href="#datatype-properties-cardinality-restrictions">2.4.4. Cardinality Restrictions</a></p>
+                    <p class="ps-4"><a href="#datatype-properties-functional-properties">2.4.5. Functional Properties</a></p>
+                    <p class="ps-2"><a href="#relations-between-properties-object-property">2.5. Relations between Object Properties</a></p>
+                    <p class="ps-4"><a href="#sub-property-object-property">2.5.1. Sub-property</a></p>
+                    <p class="ps-4"><a href="#equivalent-property-object-property">2.5.2. Equivalent property</a></p>
+                    <p class="ps-4"><a href="#inverse-property-object-property">2.5.3. Inverse property</a></p>
+                    <p class="ps-2"><a href="#relations-between-properties-datatype-properties">2.6. Relations between Datatype Properties</a></p>
+                    <p class="ps-4"><a href="#sub-property-datatype-property">2.6.1. Sub-property</a></p>
+                    <p class="ps-4"><a href="#equivalent-property-datatype-property">2.6.2. Equivalent property</a></p>
+                    <p class="ps-2"><a href="#individuals">2.7. Individuals</a></p>
+                    <p class="ps-4"><a href="#class-membership">2.7.1. Class Membership</a></p>
+                    <p class="ps-4"><a href="#property-values">2.7.2. Property Values</a></p>
+                    <p class="ps-4"><a href="#individual-identity">2.7.3. Individual Identity</a></p>
+                    <p class="ps-4"><a href="#same-as">2.7.3.1. Same as</a></p>
+                    <p class="ps-4"><a href="#different-from">2.7.3.2. Different From</a></p>
+                    <p class="ps-4"><a href="#all-different">2.7.3.3. All Different</a></p>
+                </div>
+
+                <div id="toc-domain-experts" style="display: none;">
+                    <p><a href="#introduction">1. Introduction</a></p>
+                    <p><a href="#specification-domain-experts">2. Specification</a></p>
+                    <p class="ps-2"><a href="#basic-elements-experts">2.1. Basic Elements</a></p>
+                    <p class="ps-2"><a href="#classes-experts">2.2. Classes</a></p>
+                    <p class="ps-4"><a href="#class-definition-experts">2.2.1. Class Definition</a></p>
+                    <p class="ps-4"><a href="#sub-class-experts">2.2.2. Sub-Class</a></p>
+                    <p class="ps-4"><a href="#equivalent-classes-experts">2.2.3. Equivalent Classes</a></p>
+                    <p class="ps-4"><a href="#disjoint-classes-experts">2.2.4. Disjoint Classes</a></p>
+                    <p class="ps-4"><a href="#intersection-of-classes-experts">2.2.5. Intersection of Classes</a></p>
+                    <p class="ps-4"><a href="#union-of-classes-experts">2.2.6. Union of Classes</a></p>
+                    <p class="ps-2"><a href="#object-properties-experts">2.3. Object Properties</a></p>
+                    <p class="ps-4"><a href="#object-properties-domain-and-range-experts">2.3.1. Domain and Range</a></p>
+                    <p class="ps-2"><a href="#datatype-properties-experts">2.4. Datatype Properties</a></p>
+                    <p class="ps-4"><a href="#datatype-properties-domain-and-range-experts">2.4.1. Domain and Range</a></p>
+                    <p class="ps-2"><a href="#individuals-experts">2.5. Individuals</a></p>
+                    <p class="ps-4"><a href="#class-membership-experts">2.5.1. Class Membership</a></p>
+                    <p class="ps-4"><a href="#property-values-experts">2.5.2. Property Values</a></p>
+                </div>
 
             </div>
         </div>
@@ -121,8 +152,13 @@
                         <p class="px-3 secondary-text">2021-06-01</p>
                     </div>
                     <div class="py-1">
-                        <p class="fw-bold mb-1">License:</p>
-                        <p class="pb-4 px-3 secondary-text">Apache 2.0 License</p>
+                        <p class="fw-bold mb-1">Chowlk Diagrams.net Library for Ontologists:</p>
+                        <p class="px-3 secondary-text"><a class="link" href="resources/chowlk-library-ontologist.xml" download="library">Download</a></p>
+                    </div>
+        
+                    <div class="py-1">
+                        <p class="fw-bold mb-1">Chowlk Diagrams.net Library for Domain Experts:</p>
+                        <p class="pb-4 px-3 secondary-text"><a class="link" href="resources/chowlk-library-domain-expert.xml" download="library">Download</a></p>
                     </div>
                 </div>
             </section>
@@ -152,7 +188,9 @@
             </section>
 
 
-            <section id="specification" class="pt-3 px-5">
+            <!--Specification for Ontologists-->
+
+            <section id="specification-ontologists" class="pt-3 px-5">
 
                 <div class="container">
                     <h4>2. Specification</h4>
@@ -1447,6 +1485,434 @@
 
             </section>
 
+            <!--Specification for Domain Experts-->
+
+            <section id="specification-domain-experts" style="display: none;" class="pt-3 px-5">
+
+                <div class="container">
+                    <h4>2. Specification</h4>
+                    <p>
+                        This sections gives detailed information about the diagraming blocks used to represent the OWL elements 
+                        used in the construction of an ontology. The specification is structured around the three main elements 
+                        n an ontology: owl:Class, owl:ObjectProperty and owl:DatatypeProperty. Each table in the sub-sections 
+                        contains not only the diagram block but also the equivalent owl code, and a description of the element.
+                    </p>
+                    
+                    <h5 id="basic-elements-experts" class="pt-3">2.1. Basic Elements</h5>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 20%;">Diagram Block</th>
+                                <th scope="col" style="width: 60%;">Description</th>
+                                <th scope="col" style="width: 20%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/class.svg" alt="class"></td>
+                                <td>Block to represent named and unnamed classes, as well as individual elements within the 
+                                    ontology conceptualization. The content of the block should be accompanied with the prefix 
+                                    and the name of the concept on order to fully identify it.</td>
+                                <td><code>owl:Class</code></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/individual.svg" alt="individual"></td>
+                                <td>Block to represent named and unnamed classes, as well as individual elements within the 
+                                    ontology conceptualization. The content of the block should be accompanied with the prefix 
+                                    and the name of the concept on order to fully identify it.</td>
+                                <td><code>owl:Individual</code></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/object_property_arrow.svg" alt="object-property"></td>
+                                <td>Standard way to represent object properties. Variations can apply to the type of line or 
+                                    the connections style depending on the range or domain specification. For more details see 
+                                    section 2.3.</td>
+                                <td><code>owl:ObjectProperty</code></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/subclass_arrow.svg" alt="sub-class"></td>
+                                <td>Special arrow to indicate sub-class relationship between two classes.</td>
+                                <td><code>owl:subClassOf</code></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/type_arrow.svg" alt="type"></td>
+                                <td>Special arrow to represent several relationships between elements of this specification. 
+                                    It can be used to indicate <code>rdf:type</code> relationships, or to connect a <code>owl:unionOf</code> axiom with all 
+                                    the concepts it is composed of.</th>
+                                <td><code>rdf:type</code></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/datatype_rectangle.svg" alt="datatype-properties"></td>
+                                <td>Standard way to represent datatype properties attached to a specific owl:Class element. Variations can apply to the type 
+                                    of outer line depending on the domain and range specification. For more details see section 2.4.</td>
+                                <td><code>rdf:DatatypeProperty</code></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/namespaces.svg" alt="namespaces"></td>
+                                <td>Block to indicate all the namespaces used in the ontology. The first namespace is the URI used for the current 
+                                    ontology. It is obligatory to include all the namespaces being used in order to use the ontology converter service.</td>
+                                <td><code>@prefix base: &lt;http://namespace.com#&gt;</code></td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/metadata.svg" alt="metadata"></td>
+                                <td>Block to indicate the annotation properties describing the ontology. The annotations in use should include the prefix 
+                                    and the annotation name, as indicated in the figure. If custom annotations are utilized, the namespace block should 
+                                    include the prefixes and namespaces for those annotation properties.</td>
+                                <td><code>owl:AnnotationProperty</code></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <h5 id="classes-experts" class="pt-3">2.2. Classes</h5>
+
+                    <h5 id="class-definition-experts" class="pt-3">2.2.1. Class Definition</h5>
+
+                    <p class="pt-3">Definition of a named class.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/class.svg" alt="class"></td>
+                                <td><code>owl:Class</code></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    
+                    <p class="pt-3">Definition of an unnamed class. Usually used to represent axioms.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/unnamed_class_1.svg" alt="class"></td>
+                                <td><code>owl:Class</code></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                    <p class="pt-3">Definition of an unnamed class to represent logical combinations between other 
+                        classes, such as AND or OR operators.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/circle.svg" alt="class"></td>
+                                <td><code>owl:Class</code></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+
+                    <h5 id="sub-class-experts" class="pt-3">2.2.2. Sub-Class</h5>
+
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class2</code> concept is sub-class of <code>ns:Class1</code></p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <img src="images/subclass_1.svg" alt="subclass">
+                                </td>
+                                <td><code>ns:Class2 owl:subClassOf ns:Class1</code></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <h5 id="equivalent-classes-experts" class="pt-3">2.2.3. Equivalent Classes</h5>
+
+                    <p>Graphical representations to indicate that <code>ns:Class2</code> concept is equivalent to <code>ns:Class1</code></p>
+
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <img src="images/equivalent_1.svg" alt="equivalent">
+                                </td>
+                                <td><code>ns:Class1 owl:equivalentClass ns:Class2</code></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <h5 id="disjoint-classes-experts" class="pt-3">2.2.4. Disjoint Classes</h5>
+
+                    <p>Graphical representations to indicate that <code>ns:Class2</code> and <code>ns:Class1</code> are disjoint concepts</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <img src="images/disjoint_1.svg" alt="disjoint">
+                                </td>
+                                <td><code>ns:Class1 owl:disjointWith ns:Class2</code></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <h5 id="intersection-of-classes-experts" class="pt-3">2.2.5. Intersection of Classes</h5>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center" scope="row">
+                                    <img src="images/intersection_1.svg" alt="intersection">
+                                </td>
+                                <td><code>owl:intersectionOf (ns:Class1 ns:Class2)</code></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <h5 id="union-of-classes-experts" class="pt-3">2.2.6. Union of Classes</h5>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center" scope="row">
+                                    <img src="images/union_1.svg" alt="union">
+                                </td>
+                                <td><code>owl:unionOf (ns:Class1 ns:Class2)</code></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <h5 id="object-properties-experts" class="pt-3">2.3. Object Properties</h5>
+
+                    <h5 id="object-properties-domain-and-range-experts" class="pt-3">2.3.1. Domain and Range</h5>
+                    
+                    <p class="pt-3">Object properties without domain and range.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <img src="images/no_domain_no_range_op_1.svg" alt="">
+                                </td>
+                                <td><code>ns:objectProperty rdf:type owl:ObjectProperty .</code></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <p class="pt-3">Object properties with domain and range.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <img src="images/yes_domain_yes_range_op_1.svg" alt="">
+                                </td>
+                                <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br>
+                                    rdfs:domain ns:Class1 ;<br>
+                                    rdfs:range ns:Class2 .</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5 id="datatype-properties-experts" class="pt-3">2.4. Datatype Properties</h5>
+
+                    <h5 id="datatype-properties-domain-and-range-experts" class="pt-3">2.4.1. Domain and Range</h5>
+
+                    <p class="pt-3">Datatype properties without domain and range.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/no_domain_no_range_dp.svg" alt=""></td>
+                                <td><code>ns:datatypeProperty rdf:type owl:DatatypeProperty .</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <p class="pt-3">Datatype properties with domain and range.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center" scope="row">
+                                    <img src="images/yes_domain_yes_range_dp.svg" alt="">
+                                </td>
+                                <td><code>ns:datatypeProperty rdf:type owl:DatatypeProperty ;<br>
+                                    rdfs:domain ns:Class ;<br>
+                                    rdfs:range datatype .</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5 id="individuals-experts" class="pt-3">2.5. Individuals</h5>
+
+                    <h5 id="class-membership-experts" class="pt-3">2.5.1. Class Membership</h5>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center" scope="row">
+                                    <img src="images/individual_class_1.svg" alt="">
+                                </td>
+                                <td><code>ns:Individual rdf:type ns:Class .</code></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+                    <h5 id="property-values-experts" class="pt-3">2.5.2. Property Values</h5>
+
+                    <p class="pt-3">Association between individuals in RDF graphs.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center row-height" scope="row"><img src="images/rdf_1.svg" alt=""></td>
+                                <td><code>ns:Individual1 ns:objectProperty ns:Individual2 .</code></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+                    <p class="pt-3">Association between individuals and datatype values in RDF graphs.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="text-center row-height" scope="row"><img src="images/rdf_2.svg" alt=""></td>
+                                <td><code>ns:Individual ns:datatypeProperty "value"^^datatype .</code></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+
+
+
+                </div>
+            </section>
+
             <!--Footer-->
             <footer class="footer py-2">
                 <div class="container">
@@ -1471,6 +1937,8 @@
         </div>
 
     </div>
+
+    <script src="js/notation.js"></script>
 
 </body>
 </html>
