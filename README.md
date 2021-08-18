@@ -15,11 +15,11 @@ https://chowlk.linkeddata.es/chowlk_spec
 
 1. Library for Ontology Engineers:
 
-    https://github.com/oeg-upm/chowlk_spec/blob/master/chowlk-library-ontologist.xml
+    https://github.com/oeg-upm/chowlk_spec/blob/master/resources/chowlk-library-ontologist.xml
 
 2. Library for Domain Experts:
 
-    https://github.com/oeg-upm/chowlk_spec/blob/master/chowlk-library-domain-expert.xml
+    https://github.com/oeg-upm/chowlk_spec/blob/master/resources/chowlk-library-domain-expert.xml
 
 <b>Drawio Examples of how to use the specification:</b><br>
 https://github.com/oeg-upm/chowlk_spec/tree/master/examples
