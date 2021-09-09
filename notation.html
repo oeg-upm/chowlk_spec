@@ -197,7 +197,7 @@
                     <p>
                         This sections gives detailed information about the diagraming blocks used to represent the OWL elements 
                         used in the construction of an ontology. The specification is structured around the three main elements 
-                        n an ontology: owl:Class, owl:ObjectProperty and owl:DatatypeProperty. Each table in the sub-sections 
+                        of an ontology: owl:Class, owl:ObjectProperty and owl:DatatypeProperty. Each table in the sub-sections 
                         contains not only the diagram block but also the equivalent owl code, and a description of the element.
                     </p>
 
@@ -260,15 +260,13 @@
 
                             <tr>
                                 <td class="text-center" scope="row"><img src="images/object_property_diamond.svg" alt="object-properties"></td>
-                                <td>Alternative way to represent object properties. Mainly used to represent relations between the 
-                                    properties like <code>rdfs:subpropertyOf</code></td>.
+                                <td>Alternative way to represent object properties.
                                 <td><code>rdf:ObjectProperty</code></td>
                             </tr>
 
                             <tr>
                                 <td class="text-center" scope="row"><img src="images/datatype_property_diamond.svg" alt="datatype-properties"></td>
-                                <td>Alternative way to represent datatype properties. Mainly used to represent relations between the properties 
-                                    like <code>rdfs:subpropertyOf</code>.</td>
+                                <td>Alternative way to represent datatype properties.</td>
                                 <td><code>rdf:DatatypeProperty</code></td>
                             </tr>
 
@@ -388,32 +386,6 @@
 
                     </table>
 
-                    <table class="table table-bordered align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col" style="width: 55%;">Examples of usage</th>
-                                <th scope="col" style="width: 45%;">OWL Element</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td class="text-center row-height" scope="row">
-                                    <img src="images/examples/subclass_example_1.svg" alt="subclass">
-                                </td>
-                                <td><code>ns:Worker owl:subClassOf ns:Person</code></td>
-                            </tr>
-
-                            <tr>
-                                <td class="text-center row-height" scope="row">
-                                    <img src="images/examples/subclass_example_2.svg" alt="subclass">
-                                </td>
-                                <td><code>ns:Space owl:subClassOf ns:Zone</code></td>
-                            </tr>
-                        </tbody>
-
-                    </table>
-
                     <h5 id="equivalent-classes" class="pt-3">2.2.3. Equivalent Classes</h5>
 
                     <p>Graphical representations to indicate that <code>ns:Class2</code> concept is equivalent to <code>ns:Class1</code></p>
@@ -441,32 +413,6 @@
                                     <p class="alt-tag">Alternative</p>
                                     <img src="images/equivalent_2.svg" alt="equivalent">
                                 </td>
-                            </tr>
-                        </tbody>
-
-                    </table>
-
-                    <table class="table table-bordered align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col" style="width: 55%;">Examples of usage</th>
-                                <th scope="col" style="width: 45%;">OWL Element</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td class="text-center row-height" scope="row">
-                                    <img src="images/examples/equivalent_example_1.svg" alt="equivalent">
-                                </td>
-                                <td><code>s4bldg:BuildingElement owl:equivalentClass bot:Element</code></td>
-                            </tr>
-
-                            <tr>
-                                <td class="text-center row-height" scope="row">
-                                    <img src="images/examples/equivalent_example_2.svg" alt="equivalent">
-                                </td>
-                                <td><code>s4bldg:BuildingElement owl:equivalentClass bot:Element</code></td>
                             </tr>
                         </tbody>
 
@@ -503,32 +449,6 @@
 
                     </table>
 
-                    <table class="table table-bordered align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col" style="width: 55%;">Examples of usage</th>
-                                <th scope="col" style="width: 45%;">OWL Element</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td class="text-center row-height" scope="row">
-                                    <img src="images/examples/disjoint_example_1.svg" alt="disjoint">
-                                </td>
-                                <td><code>building:Wall owl:disjointWith building:Door</code></td>
-                            </tr>
-
-                            <tr>
-                                <td class="text-center row-height" scope="row">
-                                    <img src="images/examples/disjoint_example_2.svg" alt="disjoint">
-                                </td>
-                                <td><code>building:Wall owl:disjointWith building:Door</code></td>
-                            </tr>
-                        </tbody>
-
-                    </table>
-
                     <h5 id="intersection-of-classes" class="pt-3">2.2.5. Intersection of Classes</h5>
 
                     <table class="table table-bordered align-middle">
@@ -553,32 +473,6 @@
                                     <p class="alt-tag">Alternative</p>
                                     <img src="images/intersection_2.svg" alt="intersection">
                                 </td>
-                            </tr>
-                        </tbody>
-
-                    </table>
-
-                    <table class="table table-bordered align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col" style="width: 55%;">Examples of usage</th>
-                                <th scope="col" style="width: 45%;">OWL Element</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td class="text-center" scope="row">
-                                    <img src="images/examples/intersection_example_1.svg" alt="intersection">
-                                </td>
-                                <td><code>ns:CTO owl:subClassOf [owl:intersectionOf (ns:Class1 ns:Class2)]</code></td>
-                            </tr>
-
-                            <tr>
-                                <td class="text-center" scope="row">
-                                    <img src="images/examples/intersection_example_2.svg" alt="intersection">
-                                </td>
-                                <td><code>ns:CTO owl:subClassOf [owl:intersectionOf (ns:Class1 ns:Class2)]</code></td>
                             </tr>
                         </tbody>
 
@@ -1211,6 +1105,8 @@
                     </table>
 
                     <h5 id="relations-between-properties-object-property" class="pt-3">2.5. Relations between Object Properties</h5>
+                    
+                    <p>Currently, the converter only supports the "Preferred" version of the relations.</p>
 
                     <h5 id="sub-property-object-property" class="pt-3">2.5.1. Sub-Property</h5>
                     
@@ -1299,6 +1195,8 @@
 
 
                     <h5 id="relations-between-properties-datatype-properties" class="pt-3">2.6. Relations between Datatype Properties</h5>
+                    
+                    <p>Currently, the converter only supports the "Preferred" version of the relations.</p>
 
                     <h5 id="sub-property-datatype-property" class="pt-3">2.6.1. Sub-Property</h5>
 
