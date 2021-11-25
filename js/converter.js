@@ -57,7 +57,7 @@ function downloadFile(filename, text){
 // Function to send file to the Chowlk backend
 
 function sendFile(file){
-    const uri = "http://0.0.0.0:5000/api";
+    const uri = "https://chowlk.linkeddata.es/api";
     const xhr = new XMLHttpRequest();
     const fd = new FormData();
 
