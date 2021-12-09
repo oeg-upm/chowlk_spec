@@ -57,7 +57,8 @@ function downloadFile(filename, text){
 // Function to send file to the Chowlk backend
 
 function sendFile(file){
-    const uri = "https://chowlk.linkeddata.es/api";
+    //const uri = "https://chowlk.linkeddata.es/api";
+    const uri = "http://localhost:5000/api";
     const xhr = new XMLHttpRequest();
     const fd = new FormData();
 
@@ -208,6 +209,7 @@ function sendFile(file){
             }
 
             if (namespaces_keys.length > 0){
+                errorReport.style.display = "block";
                 newNamespaces.style.display = "block";
 
                 var unorderedList = document.createElement("ul");
