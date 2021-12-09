@@ -19,9 +19,9 @@ https://chowlk.linkeddata.es/index.html
 1. Complete diagrams.net template:
 
     It contains all the building blocks specified in the visual notation.
-    https://github.com/oeg-upm/chowlk_spec/blob/master/resources/chowlk-library-ontologist.xml
+    https://github.com/oeg-upm/chowlk_spec/blob/master/resources/chowlk-library-complete.xml
 
 2. Library for Domain Experts:
 
     It contains a subset of the specification for users less versed on the OWL language.
-    https://github.com/oeg-upm/chowlk_spec/blob/master/resources/chowlk-library-domain-expert.xml
+    https://github.com/oeg-upm/chowlk_spec/blob/master/resources/chowlk-library-lightweight.xml
