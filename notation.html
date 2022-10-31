@@ -34,6 +34,7 @@
                     <p><a href="#introduction">1. Introduction</a></p>
                     <p><a href="#specification-ontologists">2. Specification</a></p>
                     <p class="ps-2"><a href="#basic-elements">2.1. Basic Elements</a></p>
+                    <p class="ps-2"><a href="#namespaces">2.2. Namespaces</a></p>
                     <p class="ps-2"><a href="#classes">2.2. Classes</a></p>
                     <p class="ps-4"><a href="#class-definition">2.2.1. Class Definition</a></p>
                     <p class="ps-4"><a href="#sub-class">2.2.2. Sub-Class</a></p>
@@ -290,6 +291,92 @@
                             </tr>
 
                         </tbody>
+                    </table>
+
+                    <h5 id="namespaces" class="pt-3">2.2. Namespaces</h5>
+
+                    <p class="pt-3">Definition of @base an empty prefix when they are not specified in the namespaces.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/no_base_no_empty_prefix.svg" alt="namespace"></td>
+                                <td><code>prefix : &lt;https://w3id.org/def/saref4bldg#&gt; .<br>
+                                    ...<br>
+                                    @base &lt;https://w3id.org/def/saref4bldg#&gt; .</code></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <p class="pt-3">Definition of @base an empty prefix when a base is specified in the namespaces but the empty prefix is not specified.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/yes_base_no_empty_prefix.svg" alt="namespace"></td>
+                                <td><code>prefix : &lt;https://w3id.org/def/base#&gt; .<br>
+                                    ...<br>
+                                    @base &lt;https://w3id.org/def/base#&gt; .</code></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <p class="pt-3">Definition of @base an empty prefix when a base is not specified in the namespaces but the empty prefix is specified.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/no_base_yes_empty_prefix.svg" alt="namespace"></td>
+                                <td><code>prefix : &lt;https://w3id.org/def/emptyPrefix#&gt; .<br>
+                                    ...<br>
+                                    @base &lt;https://w3id.org/def/saref4bldg#&gt; .</code></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <p class="pt-3">Definition of @base an empty prefix when they are specified in namespaces.</p>
+
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 55%;">Diagram Block</th>
+                                <th scope="col" style="width: 45%;">OWL Element</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td class="text-center" scope="row"><img src="images/yes_base_yes_empty_prefix.svg" alt="namespace"></td>
+                                <td><code>prefix : &lt;https://w3id.org/def/emptyPrefix#&gt; .<br>
+                                    ...<br>
+                                    @base &lt;https://w3id.org/def/base#&gt; .</code></td>
+                            </tr>
+                        </tbody>
+
                     </table>
                     
                     <h5 id="classes" class="pt-3">2.2. Classes</h5>
@@ -1396,7 +1483,7 @@
                     <p>
                         This sections gives detailed information about the diagraming blocks used to represent the OWL elements 
                         used in the construction of an ontology. The specification is structured around the three main elements 
-                        n an ontology: owl:Class, owl:ObjectProperty and owl:DatatypeProperty. Each table in the sub-sections 
+                        of an ontology: owl:Class, owl:ObjectProperty and owl:DatatypeProperty. Each table in the sub-sections 
                         contains not only the diagram block but also the equivalent owl code, and a description of the element.
                     </p>
                     
