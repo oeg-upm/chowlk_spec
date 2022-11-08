@@ -153,7 +153,7 @@
                     </div>
                     <div class="py-1">
                         <p class="fw-bold mb-1">Last update:</p>
-                        <p class="px-3 secondary-text">2021-06-01</p>
+                        <p class="px-3 secondary-text">2022-11-01</p>
                     </div>
                     <div class="py-1">
                         <p class="fw-bold mb-1">Chowlk Diagrams.net Library (lightweight version):</p>
@@ -405,6 +405,20 @@
                     
                     <h5 id="classes" class="pt-3">2.3. Class Descriptions</h5>
 
+                    <p class="pt-3">A class description describes an OWL class, either by a class name 
+                        or by specifying the class extension of an unnamed anonymous class. OWL distinguishes six types of class descriptions:
+                        <ol>
+                            <li>a <span class="black-letter">class identifier</span> (a URI reference)</li>
+                            <li>an exhaustive <span class="black-letter">enumeration</span> of individuals that together form the instances of a class</li>
+                            <li>a property <span class="black-letter">restriction</span></li>
+                            <li>the <span class="black-letter">intersection</span> of two or more class descriptions</li>
+                            <li>the <span class="black-letter">union</span> of two or more class descriptions</li>
+                            <li>the <span class="black-letter">complement</span> of a class description</li>
+                        </ol>
+                        The first type is special in the sense that it describes a class through a <span class="black-letter">class name</span> (syntactically represented as a URI reference).
+                        The other five types of class descriptions describe an <span class="black-letter">anonymous class</span> by placing constraints on the class extension.
+                        </p>
+
                     <h5 id="class-definition" class="pt-3">2.3.1. Class Definition</h5>
 
                     <p class="pt-3">Definition of a named class.</p>
@@ -471,6 +485,15 @@
 
                     <h5 id="class-axioms" class="pt-3">2.3.2. Class Axioms</h5>
 
+                    <p class="pt-3">Class descriptions form the building blocks for defining classes through class axioms.
+                        OWL contains three language constructs for combining class descriptions into class axioms:
+                        <ul>
+                            <li><span class="black-letter">rdfs:subClassOf</span> allows one to say that the class extension of a class description is a subset of the class extension of another class description.</li>
+                            <li><span class="black-letter">owl:equivalentClass</span> allows one to say that a class description has exactly the same class extension as another class description.</li>
+                            <li><span class="black-letter">owl:disjointWith</span> allows one to say that the class extension of a class description has no members in common with the class extension of another class description.</li>
+                        </ul>
+                    </p>
+
                     <h5 id="sub-class" class="pt-3">2.3.2.1. Sub-Class</h5>
 
                     <p class="pt-3">Graphical representations to indicate that <code>ns:Class2</code> concept is sub-class of <code>ns:Class1</code></p>
@@ -502,7 +525,8 @@
 
                     </table>
 
-                    <p class="pt-3">Enumeration</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is sub-class of an anonymous class which represents an <span class="black-letter">enumeration</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -525,7 +549,8 @@
 
                     </table>
 
-                    <p class="pt-3">Restriction</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is sub-class of an anonymous class which represents a <span class="black-letter">property restriction</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -570,7 +595,8 @@
                     </table>
                     
 
-                    <p class="pt-3">Intersection</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is sub-class of an anonymous class which represents an <span class="black-letter">intersection</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -592,7 +618,8 @@
                         </tbody>
                     </table>
 
-                    <p class="pt-3">Union</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is sub-class of an anonymous class which represents an <span class="black-letter">union</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -614,7 +641,8 @@
                         </tbody>
                     </table>
 
-                    <p class="pt-3">Complement</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is sub-class of an anonymous class which represents a <span class="black-letter">complement</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -668,8 +696,10 @@
 
                     </table>
 
-                    <p class="pt-3">Enumeration</p>
-
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is equivalent to an anonymous class which represents an 
+                        <span class="black-letter">enumeration</span></p>
+                    
                     <table class="table table-bordered align-middle">
                         <thead>
                             <tr>
@@ -699,7 +729,9 @@
 
                     </table>
 
-                    <p class="pt-3">Restriction</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is equivalent to an anonymous class which represents a 
+                        <span class="black-letter">property restriction</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -742,7 +774,9 @@
 
                     </table>
 
-                    <p class="pt-3">Intersection</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is equivalent to an anonymous class which represents an 
+                        <span class="black-letter">intersection</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -775,7 +809,9 @@
 
                     </table>
 
-                    <p class="pt-3">Union</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is equivalent to an anonymous class which represents an 
+                        <span class="black-letter">union</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -808,7 +844,9 @@
 
                     </table>
 
-                    <p class="pt-3">Complement</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is equivalent to an anonymous class which represents a 
+                        <span class="black-letter">complement</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -873,7 +911,9 @@
 
                     </table>
 
-                    <p class="pt-3">Enumeration</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is disjoint with an anonymous class which represents an 
+                        <span class="black-letter">enumeration</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -904,7 +944,9 @@
 
                     </table>
 
-                    <p class="pt-3">Restriction</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is disjoint with an anonymous class which represents a 
+                        <span class="black-letter">property restriction</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -948,7 +990,9 @@
 
                     </table>
 
-                    <p class="pt-3">Intersection</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is disjoint with an anonymous class which represents an 
+                        <span class="black-letter">intersection</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -981,7 +1025,9 @@
 
                     </table>
 
-                    <p class="pt-3">Union</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is disjoint with an anonymous class which represents an 
+                        <span class="black-letter">union</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1014,7 +1060,9 @@
 
                     </table>
 
-                    <p class="pt-3">Complement</p>
+                    <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
+                        concept is disjoint with an anonymous class which represents a
+                        <span class="black-letter">complement</span></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1048,6 +1096,10 @@
                     </table>
 
                     <h5 id="class-restrictions" class="pt-3">2.3.3. Restrictions</h5>
+
+                    <p class="pt-3">In this section all the property restriction are explained. Note that all the 
+                        <span class="black-letter">class axioms explained above apply</span> with all the property restrictions. However, just the 
+                        <code>owl:allValuesFrom</code> notation was drawn in order to overload that section.</p>
 
                     <h5 id="restriction-value-constraint" class="pt-3">2.3.3.1. Value Constraints</h5>
 
@@ -1211,7 +1263,9 @@
                         </tbody>
                     </table>
 
-                    <p class="pt-3">owl:hasValue between a concept and an individual. </p>
+                    <p class="pt-3"><code>owl:hasValue</code> restriction between a concept and an individual. 
+                        The <code>ns:Class</code> concept is subclass of an anonymus class which has an object property <code>ns:objectProperty</code>, 
+                        which has at least one value semantically equal to <code>ns:Individual</code></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1253,7 +1307,10 @@
                         </tbody>
                     </table>
 
-                    <p class="pt-3">owl:hasValue between a concept and a data value. </p>
+                    <p class="pt-3"><code>owl:hasValue</code> restriction between a concept and a data value. 
+                        The <code>ns:Class</code> concept is subclass of an anonymus class which has a datatype property <code>ns:datatypeProperty1</code>, 
+                        which has at least one value semantically equal to a value<code>data_value</code>
+                         whose datatype is <code>prefix:datatype</code></p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1500,9 +1557,23 @@
 
                     <h5 id="concatenation-class-restrictions" class="pt-3">2.3.4. Concatenation of Class Descriptions</h5>
 
+                    <p class="pt-3">An anonymous Class acts semantically as a Class. Therefore, inside a Class Description
+                        could be another Class Description. In this section the notation used in order to concatenate
+                        class descriptions are explained. Note that <span class="black-letter">different class axioms</span> can be used, <code>owl:equivalentClass</code>
+                        is just used in order to not overload this section.
+                    </p>
+
                     <h5 id="restriction-of-classes" class="pt-3">2.3.4.1. Restriction of Classes</h5>
 
-                    <p class="pt-3">Enumeration</p>
+                    <p class="pt-3">Note that in case of property restrictions just 
+                        <code>owl:allValuesFrom</code> and <code>owl:someValuesFrom</code>
+                        can be concatenated with others class descriptions.
+                    </p>
+
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        an <span class="black-letter">enumeration</span> inside of an anonymous class which
+                        represents a property restriction.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1530,7 +1601,10 @@
 
                     </table>
 
-                    <p class="pt-3">Restriction</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        a <span class="black-letter">property restriction</span> inside of an anonymous class which
+                        represents a property restriction.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1561,7 +1635,10 @@
 
                     </table>
 
-                    <p class="pt-3">Intersection</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        an <span class="black-letter">intersection</span> inside of an anonymous class which
+                        represents a property restriction.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1589,7 +1666,10 @@
 
                     </table>
 
-                    <p class="pt-3">Union</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        an <span class="black-letter">union</span> inside of an anonymous class which
+                        represents a property restriction.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1617,7 +1697,10 @@
 
                     </table>
 
-                    <p class="pt-3">Complement</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        a <span class="black-letter">complement</span> inside of an anonymous class which
+                        represents a property restriction.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1674,7 +1757,10 @@
 
                     </table>
 
-                    <p class="pt-3">Enumeration</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        an <span class="black-letter">enumeration</span> inside of an anonymous class which
+                        represents an intersection.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1699,7 +1785,10 @@
 
                     </table>
 
-                    <p class="pt-3">Restriction</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        a <span class="black-letter">property restriction</span> inside of an anonymous class which
+                        represents an intersection.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1727,7 +1816,10 @@
 
                     </table>
 
-                    <p class="pt-3">Intersection</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        an <span class="black-letter">intersection</span> inside of an anonymous class which
+                        represents an intersection.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1752,7 +1844,10 @@
 
                     </table>
 
-                    <p class="pt-3">Union</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        an <span class="black-letter">union</span> inside of an anonymous class which
+                        represents an intersection.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1777,7 +1872,10 @@
 
                     </table>
 
-                    <p class="pt-3">Complement</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        a <span class="black-letter">complement</span> inside of an anonymous class which
+                        represents an intersection.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1831,7 +1929,10 @@
 
                     </table>
 
-                    <p class="pt-3">Enumeration</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        an <span class="black-letter">enumeration</span> inside of an anonymous class which
+                        represents an union.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1856,7 +1957,10 @@
 
                     </table>
 
-                    <p class="pt-3">Restriction</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        a <span class="black-letter">property restriction</span> inside of an anonymous class which
+                        represents an union.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1884,7 +1988,10 @@
 
                     </table>
 
-                    <p class="pt-3">Intersection</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        an <span class="black-letter">intersection</span> inside of an anonymous class which
+                        represents an union.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1909,7 +2016,10 @@
 
                     </table>
 
-                    <p class="pt-3">Union</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        an <span class="black-letter">union</span> inside of an anonymous class which
+                        represents an union.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1934,7 +2044,10 @@
 
                     </table>
 
-                    <p class="pt-3">Complement</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        a <span class="black-letter">complement</span> inside of an anonymous class which
+                        represents an union.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -1982,7 +2095,10 @@
                         </tbody>
                     </table>
 
-                    <p class="pt-3">Enumeration</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        an <span class="black-letter">enumeration</span> inside of an anonymous class which
+                        represents a complement.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -2007,7 +2123,10 @@
 
                     </table>
 
-                    <p class="pt-3">Restriction</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        a <span class="black-letter">property restriction</span> inside of an anonymous class which
+                        represents a complement.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -2035,7 +2154,10 @@
 
                     </table>
 
-                    <p class="pt-3">Intersection</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        an <span class="black-letter">intersection</span> inside of an anonymous class which
+                        represents a complement.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -2060,7 +2182,10 @@
 
                     </table>
 
-                    <p class="pt-3">Union</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        an <span class="black-letter">union</span> inside of an anonymous class which
+                        represents a complement.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -2085,7 +2210,10 @@
 
                     </table>
 
-                    <p class="pt-3">Complement</p>
+                    <p class="pt-3">Definition of an anonymous class which represents 
+                        a <span class="black-letter">complement</span> inside of an anonymous class which
+                        represents a complement.
+                    </p>
 
                     <table class="table table-bordered align-middle">
                         <thead>
@@ -3210,9 +3338,9 @@
                     <hr>
                     <div class="row">
                         <div class="col">
-                            <p>Serge Chávez Feria <br>
-                            Contact email: serge.chavez.feria@upm.es <br>
-                            Latest revision: July, 2021 <br>
+                            <p>María Poveda-Villalón <br>
+                            Contact email: chowlk@delicias.dia.fi.upm.es <br>
+                            Latest revision: November, 2022 <br>
                             Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a></p>
                         </div>
                         <div class="col-3 ms-auto">
