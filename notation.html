@@ -535,16 +535,24 @@
                                 <th scope="col" style="width: 45%;">OWL Element</th>
                             </tr>
                         </thead>
-                        
-                        <tbody>
 
+                        <tbody>
                             <tr>
-                                <td class="text-center" scope="row"><img src="images/enumeration_subclass.svg" alt="class"></td>
-                                <td><code>ns:Class a owl:Class ;<br>
+                                <td class="text-center row-height" scope="row">
+                                    <p class="main-tag">Preferred</p>
+                                    <img src="images/enumeration_subclass.svg" alt="subclass">
+                                </td>
+                                <td rowspan="2"><code>ns:Class a owl:Class ;<br>
                                     rdfs:subClassOf [ a owl:Class ;<br>
                                     owl:oneOf ( ns:Individual1 ns:Individual2 ns:Individual3 ) ] .</code></td>
                             </tr>
-                        
+
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <p class="alt-tag">Alternative</p>
+                                    <img src="images/enumeration_subclass_2.svg" alt="subclass">
+                                </td>
+                            </tr>
                         </tbody>
 
                     </table>
@@ -567,7 +575,7 @@
                                     <p> <br> </p>
                                     <img src="images/restriction_subclass1.svg" alt="subclass">
                                 </td>
-                                <td rowspan="3"><code>ns:Class1 a owl:Class ;<br>
+                                <td rowspan="4"><code>ns:Class1 a owl:Class ;<br>
                                     rdfs:subClassOf [ a owl:Restriction ;<br>
                                     owl:allValuesFrom ns:Class2 ;<br>
                                     owl:onProperty ns:objectProperty ] .<br>
@@ -590,6 +598,14 @@
                                     <img src="images/restriction_subclass3.svg" alt="subclass">
                                 </td>
                             </tr>
+
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <p class="alt-tag">Alternative</p>
+                                    <p> <br> </p>
+                                    <img src="images/restriction_subclass4.svg" alt="subclass">
+                                </td>
+                            </tr>
                         </tbody>
 
                     </table>
@@ -605,17 +621,26 @@
                                 <th scope="col" style="width: 45%;">OWL Element</th>
                             </tr>
                         </thead>
-                        
-                        <tbody>
 
+                        <tbody>
                             <tr>
-                                <td class="text-center" scope="row"><img src="images/intersection_subclass.svg" alt="class"></td>
-                                <td><code>ns:Class3 a owl:Class ;<br>
+                                <td class="text-center row-height" scope="row">
+                                    <p class="main-tag">Preferred</p>
+                                    <img src="images/intersection_subclass.svg" alt="subclass">
+                                </td>
+                                <td rowspan="2"><code>ns:Class3 a owl:Class ;<br>
                                     rdfs:subClassOf [ a owl:Class ;<br>
                                     owl:intersectionOf ( ns:Class1 ns:Class2 ) ] .</code></td>
                             </tr>
-                        
+
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <p class="alt-tag">Alternative</p>
+                                    <img src="images/intersection_subclass_2.svg" alt="subclass">
+                                </td>
+                            </tr>
                         </tbody>
+
                     </table>
 
                     <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
@@ -628,17 +653,26 @@
                                 <th scope="col" style="width: 45%;">OWL Element</th>
                             </tr>
                         </thead>
-                        
-                        <tbody>
 
+                        <tbody>
                             <tr>
-                                <td class="text-center" scope="row"><img src="images/union_subclass.svg" alt="class"></td>
-                                <td><code>ns:Class3 a owl:Class ;<br>
+                                <td class="text-center row-height" scope="row">
+                                    <p class="main-tag">Preferred</p>
+                                    <img src="images/union_subclass.svg" alt="subclass">
+                                </td>
+                                <td rowspan="2"><code>ns:Class3 a owl:Class ;<br>
                                     rdfs:subClassOf [ a owl:Class ;<br>
                                     owl:unionOf ( ns:Class1 ns:Class2 ) ] .</code></td>
                             </tr>
-                        
+
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <p class="alt-tag">Alternative</p>
+                                    <img src="images/union_subclass_2.svg" alt="subclass">
+                                </td>
+                            </tr>
                         </tbody>
+
                     </table>
 
                     <p class="pt-3">Graphical representations to indicate that <code>ns:Class</code> 
@@ -651,17 +685,28 @@
                                 <th scope="col" style="width: 45%;">OWL Element</th>
                             </tr>
                         </thead>
-                        
-                        <tbody>
 
+                        <tbody>
                             <tr>
-                                <td class="text-center" scope="row"><img src="images/complement_subclass.svg" alt="class"></td>
-                                <td><code>ns:Class1 a owl:Class ;<br>
+                                <td class="text-center row-height" scope="row">
+                                    <p class="main-tag">Preferred</p>
+                                    <p> <br> </p>
+                                    <img src="images/complement_subclass.svg" alt="subclass">
+                                </td>
+                                <td rowspan="2"><code>ns:Class1 a owl:Class ;<br>
                                     rdfs:subClassOf [ a owl:Class ;<br>
                                     owl:complementOf ns:Class2 ] .</code></td>
                             </tr>
-                        
+
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <p class="alt-tag">Alternative</p>
+                                    <p> <br> </p>
+                                    <img src="images/complement_subclass_2.svg" alt="subclass">
+                                </td>
+                            </tr>
                         </tbody>
+
                     </table>
 
                     <h5 id="equivalent-classes" class="pt-3">2.3.2.2. Equivalent Classes</h5>
@@ -1730,33 +1775,6 @@
 
                     <h5 id="intersection-of-classes" class="pt-3">2.3.4.2. Intersection of Classes</h5>
 
-                    <table class="table table-bordered align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col" style="width: 55%;">Diagram Block</th>
-                                <th scope="col" style="width: 45%;">OWL Element</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td class="text-center" scope="row">
-                                    <p class="main-tag">Preferred</p>
-                                    <img src="images/intersection_1.svg" alt="intersection">
-                                </td>
-                                <td rowspan="2"><code>owl:intersectionOf (ns:Class1 ns:Class2)</code></td>
-                            </tr>
-
-                            <tr>
-                                <td class="text-center" scope="row">
-                                    <p class="alt-tag">Alternative</p>
-                                    <img src="images/intersection_2.svg" alt="intersection">
-                                </td>
-                            </tr>
-                        </tbody>
-
-                    </table>
-
                     <p class="pt-3">Definition of an anonymous class which represents 
                         an <span class="black-letter">enumeration</span> inside of an anonymous class which
                         represents an intersection.
@@ -1901,33 +1919,6 @@
                     </table>
 
                     <h5 id="union-of-classes" class="pt-3">2.3.4.3. Union of Classes</h5>
-
-                    <table class="table table-bordered align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col" style="width: 55%;">Diagram Block</th>
-                                <th scope="col" style="width: 45%;">OWL Element</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td class="text-center" scope="row">
-                                    <p class="main-tag">Preferred</p>
-                                    <img src="images/union_1.svg" alt="union">
-                                </td>
-                                <td rowspan="2"><code>owl:unionOf (ns:Class1 ns:Class2)</code></td>
-                            </tr>
-
-                            <tr>
-                                <td class="text-center" scope="row">
-                                    <p class="alt-tag">Alternative</p>
-                                    <img src="images/union_2.svg" alt="union">
-                                </td>
-                            </tr>
-                        </tbody>
-
-                    </table>
 
                     <p class="pt-3">Definition of an anonymous class which represents 
                         an <span class="black-letter">enumeration</span> inside of an anonymous class which
@@ -2074,26 +2065,6 @@
                     
 
                     <h5 id="complement-of-classes" class="pt-3">2.3.4.4. Complement of a Class</h5>
-
-                    <table class="table table-bordered align-middle">
-                        <thead>
-                            <tr>
-                                <th scope="col" style="width: 55%;">Diagram Block</th>
-                                <th scope="col" style="width: 45%;">OWL Element</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td class="text-center row-height" scope="row"><img src="images/complement_of_1.svg" alt="complement"></td>
-                                <td><code>ns:Class1 owl:complementOf ns:Class2</code></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center row-height" scope="row"><img src="images/complement_of_2.svg" alt="complement"></td>
-                                <td><code>owl:complementOf ns:Class1</code></td>
-                            </tr>
-                        </tbody>
-                    </table>
 
                     <p class="pt-3">Definition of an anonymous class which represents 
                         an <span class="black-letter">enumeration</span> inside of an anonymous class which
@@ -2261,7 +2232,7 @@
                                     <p> <br> </p>
                                     <img src="images/no_domain_no_range_op_1.svg" alt="">
                                 </td>
-                                <td rowspan="2"><code>ns:objectProperty rdf:type owl:ObjectProperty .</code></td>
+                                <td rowspan="3"><code>ns:objectProperty rdf:type owl:ObjectProperty .</code></td>
                             </tr>
 
                             <tr>
@@ -2269,6 +2240,14 @@
                                     <p class="alt-tag">Alternative</p>
                                     <p> <br> </p>
                                     <img src="images/no_domain_no_range_op_2.svg" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <p class="alt-tag">Alternative</p>
+                                    <p> <br> </p>
+                                    <img src="images/no_domain_no_range_op_3.svg" alt="">
                                 </td>
                             </tr>
                         </tbody>
@@ -2292,7 +2271,7 @@
                                     <p> <br> </p>
                                     <img src="images/yes_domain_yes_range_op_1.svg" alt="">
                                 </td>
-                                <td rowspan="2"><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br>
+                                <td rowspan="3"><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br>
                                     rdfs:domain ns:Class1 ;<br>
                                     rdfs:range ns:Class2 .</code></td>
                             </tr>
@@ -2302,6 +2281,14 @@
                                     <p class="alt-tag">Alternative</p>
                                     <p> <br> </p>
                                     <img src="images/yes_domain_yes_range_op_2.svg" alt="">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center row-height" scope="row">
+                                    <p class="alt-tag">Alternative</p>
+                                    <p> <br> </p>
+                                    <img src="images/yes_domain_yes_range_op_3.svg" alt="">
                                 </td>
                             </tr>
                         </tbody>
@@ -2498,8 +2485,17 @@
 
                         <tbody>
                             <tr>
-                                <td class="text-center" scope="row"><img src="images/no_domain_no_range_dp.svg" alt=""></td>
-                                <td><code>ns:datatypeProperty rdf:type owl:DatatypeProperty .</code></td>
+                                <td class="text-center" scope="row">
+                                    <p class="main-tag">Preferred</p>
+                                    <img src="images/no_domain_no_range_dp.svg" alt="">
+                                </td>
+                                <td rowspan="2"><code>ns:datatypeProperty rdf:type owl:DatatypeProperty .</code></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center" scope="row">
+                                    <p class="alt-tag">Alternative</p>
+                                    <img src="images/no_domain_no_range_dp_2.svg" alt="">
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -2546,9 +2542,18 @@
 
                         <tbody>
                             <tr>
-                                <td class="text-center" scope="row"><img src="images/yes_domain_no_range_dp.svg" alt=""></td>
-                                <td><code>ns:datatypeProperty rdf:type owl:DatatypeProperty ;<br>
+                                <td class="text-center" scope="row">
+                                    <p class="main-tag">Preferred</p>
+                                    <img src="images/yes_domain_no_range_dp.svg" alt="">
+                                </td>
+                                <td rowspan="2"><code>ns:datatypeProperty rdf:type owl:DatatypeProperty ;<br>
                                     rdfs:domain ns:Class .</code></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center" scope="row">
+                                    <p class="alt-tag">Alternative</p>
+                                    <img src="images/yes_domain_no_range_dp_2.svg" alt="">
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -2566,10 +2571,17 @@
                         <tbody>
                             <tr>
                                 <td class="text-center" scope="row">
+                                    <p class="main-tag">Preferred</p>
                                     <img src="images/no_domain_yes_range_dp.svg" alt="">
                                 </td>
-                                <td><code>ns:datatypeProperty rdf:type owl:DatatypeProperty ;<br>
+                                <td rowspan="2"><code>ns:datatypeProperty rdf:type owl:DatatypeProperty ;<br>
                                     rdfs:range xsd:datatype .</code></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center" scope="row">
+                                    <p class="alt-tag">Alternative</p>
+                                    <img src="images/no_domain_yes_range_dp_2.svg" alt="">
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -2587,11 +2599,18 @@
                         <tbody>
                             <tr>
                                 <td class="text-center" scope="row">
+                                    <p class="main-tag">Preferred</p>
                                     <img src="images/datatype_with_namespace.svg" alt="">
                                 </td>
-                                <td><code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ;<br>
+                                <td rowspan="2"><code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ;<br>
                                     rdfs:domain ns:Class1 ;<br>
                                     rdfs:range ns:datatype .</code></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center" scope="row">
+                                    <p class="alt-tag">Alternative</p>
+                                    <img src="images/datatype_with_namespace_2.svg" alt="">
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -2716,8 +2735,6 @@
 
 
                     <h5 id="relations-between-properties-datatype-properties" class="pt-3">2.7. Relations between Datatype Properties</h5>
-                    
-                    <p>Currently, the converter only supports the "Preferred" version of the relations.</p>
 
                     <h5 id="sub-property-datatype-property" class="pt-3">2.7.1. Sub-Property</h5>
 
