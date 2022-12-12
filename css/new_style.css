@@ -124,3 +124,13 @@
     background-color: white;
     border: rgb(151, 151, 151) solid 1px;
 }
+
+.tabulacion:first-letter {
+	margin-left: 15px;
+}
+.tabulacion2:first-letter {
+	margin-left: 30px;
+}
+.black-letter {
+	font-weight: bold;
+}
