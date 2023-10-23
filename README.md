@@ -1,4 +1,11 @@
+# Importante note:
+
+This repository has been merged with https://github.com/oeg-upm/Chowlk
+
+
+
 ![Logo](https://github.com/oeg-upm/chowlk_spec/blob/master/images/logos/logo.png)
+
 
 # Chowlk Ontology Visual Notation
 
